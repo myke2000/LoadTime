@@ -1,15 +1,18 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace LoadTime
 {
+
+
     public class SoftwareVersion
     {
         public string Version { get; set; }
-
+        
         public SoftwareVersion()
         {
             Version = "6.12";
