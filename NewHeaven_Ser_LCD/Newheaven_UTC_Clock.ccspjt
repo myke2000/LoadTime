@@ -1,0 +1,73 @@
+[PROJECT]
+Target=Newheaven_UTC_Clock.hex
+Processor_Text=PIC18F26K22
+CCSVersion=5.115P
+Compiler=PCH
+[Target Data]
+FileList=Newheaven_UTC_Clock.c
+[Newheaven_UTC_Clock.c]
+Type=4
+[mru-list]
+1=Newheaven_UTC_Clock.c
+
+[defines]
+buildcount=8
+
+[Opened Files]
+1=Newheaven_UTC_Clock.c
+t1=27
+Count=3
+2=RTC_DS1307.h
+t2=9
+3=manual_set_time.h
+t3=9
+
+[ProjectLog]
+Days=5
+D1=07-01-2024
+D1_L=5
+D1_L1=[51346]Project Closed.
+D1_L2=[51352]Project Opened.
+D1_L3=[51357]Project Closed.
+D1_L4=[51391]Project Opened.
+D1_L5=[51427]Project Closed.
+D2=11-01-2024
+D2_L=2
+D2_L1=[59540]Project Opened.
+D2_L2=[59601]Project Closed.
+D3=01-03-2024
+D3_L=10
+D3_L1=[35945]Project Opened.
+D3_L2=[51461]Started Editing.
+D3_L3=[62556]Stopped Editing.
+D3_L4=[52446]Started Editing.
+D3_L5=[52874]Stopped Editing.
+D3_L6=[54599]Started Editing.
+D3_L7=[55038]Stopped Editing.
+D3_L8=[55401]Started Editing.
+D3_L9=[56096]Stopped Editing.
+TotalEdit=192
+TotalDebug=0
+D3_E=191
+D3_D=0
+D3_L10=[66202]Project Closed.
+D4=10-03-2024
+D4_L=2
+D4_L1=[64741]Project Opened.
+D4_L2=[67114]Project Closed.
+D5=11-03-2024
+D5_L=6
+D5_L1=[39006]Project Opened.
+D5_L2=[39879]Started Editing.
+D5_L3=[39907]Stopped Editing.
+D5_E=1
+D5_D=0
+D5_L4=[39907]Project Closed.
+D5_L5=[40386]Project Opened.
+D5_L6=[40390]Project Closed.
+
+[fileformats]
+forcecoff=0
+[Units]
+Count=1
+1=Newheaven_UTC_Clock (main)

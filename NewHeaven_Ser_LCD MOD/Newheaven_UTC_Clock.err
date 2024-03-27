@@ -1,0 +1,9 @@
+Compiling F:\CSharpProject\LoadTime\NewHeaven_Ser_LCD MOD\Newheaven_UTC_Clock on 23-Mar-24 at 17:49
+>>> Warning 202 "F:\CSharpProject\LoadTime\NewHeaven_Ser_LCD MOD\AutoSetTime.h" Line 1(4,8): Variable never used:   time
+>>> Warning 202 "F:\CSharpProject\LoadTime\NewHeaven_Ser_LCD MOD\Newheaven_UTC_Clock.c" Line 74(22,26): Variable never used:   date
+>>> Warning 202 "F:\CSharpProject\LoadTime\NewHeaven_Ser_LCD MOD\Newheaven_UTC_Clock.c" Line 75(22,26): Variable never used:   Tday
+>>> Warning 202 "F:\CSharpProject\LoadTime\NewHeaven_Ser_LCD MOD\Newheaven_UTC_Clock.c" Line 76(30,33): Variable never used:   pos
+>>> Warning 202 "F:\CSharpProject\LoadTime\NewHeaven_Ser_LCD MOD\Newheaven_UTC_Clock.c" Line 77(15,21): Variable never used:   inByte
+      Memory usage:   ROM=9%      RAM=5% - 5%
+      0 Errors,  5 Warnings.
+Build Successful.

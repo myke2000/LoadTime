@@ -1,0 +1,213 @@
+[PROJECT]
+Target=Newheaven_UTC_Clock.hex
+Processor_Text=PIC18F4520
+CCSVersion=5.118P
+Compiler=PCH
+[Target Data]
+FileList=Newheaven_UTC_Clock.c
+[Newheaven_UTC_Clock.c]
+Type=4
+[mru-list]
+1=Newheaven_UTC_Clock.c
+
+[fileformats]
+forcecoff=0
+
+[ProjectLog]
+Days=3
+D1=21-03-2024
+D1_L=34
+D1_L1=[38531]Project Opened.
+D1_L2=[39330]Started Editing.
+D1_L3=[39930]Stopped Editing.
+D1_L4=[40182]Started Editing.
+D1_L5=[40627]Stopped Editing.
+D1_L6=[40799]Started Editing.
+D1_L7=[41647]Stopped Editing.
+D1_L8=[41665]Started Editing.
+D1_L9=[41971]Stopped Editing.
+D1_L10=[42434]Started Editing.
+D1_L11=[44125]Stopped Editing.
+D1_L12=[45181]Started Editing.
+D1_L13=[46669]Stopped Editing.
+D1_L14=[47738]Started Editing.
+D1_L15=[49546]Stopped Editing.
+D1_L16=[49627]Started Editing.
+D1_L17=[50792]Stopped Editing.
+TotalEdit=385
+TotalDebug=226
+D1_E=106
+D1_D=39
+D1_L18=[50793]Project Closed.
+D1_L19=[50965]Project Opened.
+D1_L20=[51065]Started Editing.
+D1_L21=[51609]Stopped Editing.
+D1_L22=[52167]Started Editing.
+D1_L23=[55325]Stopped Editing.
+D1_L24=[55720]Started Editing.
+D1_L25=[55895]Stopped Editing.
+D1_L26=[55895]Started Debugging.
+D1_L27=[56361]Project Opened.
+D1_L28=[56402]Started Debugging.
+D1_L29=[56744]Stopped Debugging.
+D1_L30=[56744]Started Editing.
+D1_L31=[56787]Stopped Editing.
+D1_L32=[56787]Started Debugging.
+D1_L33=[58725]Stopped Debugging.
+D1_L34=[58725]Project Closed.
+D2=22-03-2024
+D2_L=56
+D2_L1=[30235]Project Opened.
+D2_L2=[30367]Started Editing.
+D2_L3=[30874]Stopped Editing.
+D2_L4=[30874]Started Debugging.
+D2_L5=[38539]Stopped Debugging.
+D2_L6=[40734]Started Debugging.
+D2_L7=[41314]Stopped Debugging.
+D2_L8=[41314]Started Editing.
+D2_L9=[41502]Stopped Editing.
+D2_E=172
+D2_D=165
+D2_L10=[41502]Project Closed.
+D2_L11=[41722]Project Opened.
+D2_L12=[41780]Started Editing.
+D2_L13=[42310]Stopped Editing.
+D2_L14=[43214]Project Closed.
+D2_L15=[43277]Project Opened.
+D2_L16=[43590]Project Closed.
+D2_L17=[43861]Project Opened.
+D2_L18=[45230]Started Editing.
+D2_L19=[45530]Stopped Editing.
+D2_L20=[45546]Started Editing.
+D2_L21=[46212]Stopped Editing.
+D2_L22=[46212]Started Debugging.
+D2_L23=[47002]Stopped Debugging.
+D2_L24=[47002]Project Closed.
+D2_L25=[52285]Project Opened.
+D2_L26=[52286]Project Closed.
+D2_L27=[52567]Project Opened.
+D2_L28=[52568]Project Closed.
+D2_L29=[52594]Project Opened.
+D2_L30=[52668]Started Editing.
+D2_L31=[54865]Stopped Editing.
+D2_L32=[54956]Started Editing.
+D2_L33=[55742]Stopped Editing.
+D2_L34=[55891]Started Debugging.
+D2_L35=[56667]Stopped Debugging.
+D2_L36=[56667]Started Editing.
+D2_L37=[56705]Stopped Editing.
+D2_L38=[56705]Started Debugging.
+D2_L39=[56860]Stopped Debugging.
+D2_L40=[56860]Project Closed.
+D2_L41=[56924]Project Opened.
+D2_L42=[57111]Started Editing.
+D2_L43=[61765]Stopped Editing.
+D2_L44=[61794]Started Editing.
+D2_L45=[62030]Stopped Editing.
+D2_L46=[62030]Started Debugging.
+D2_L47=[62240]Stopped Debugging.
+D2_L48=[62241]Started Editing.
+D2_L49=[62369]Stopped Editing.
+D2_L50=[62370]Started Debugging.
+D2_L51=[62559]Stopped Debugging.
+D2_L52=[62559]Started Editing.
+D2_L53=[63691]Stopped Editing.
+D2_L54=[64546]Started Editing.
+D2_L55=[65426]Stopped Editing.
+D2_L56=[71998]Project Closed.
+D3=23-03-2024
+D3_L=48
+D3_L1=[16442]Project Opened.
+D3_L2=[16450]Started Editing.
+D3_L3=[17349]Stopped Editing.
+D3_L4=[18064]Started Editing.
+D3_L5=[18376]Stopped Editing.
+D3_L6=[19057]Started Editing.
+D3_L7=[19745]Stopped Editing.
+D3_L8=[20396]Started Editing.
+D3_L9=[21486]Stopped Editing.
+D3_L10=[21486]Started Debugging.
+D3_L11=[21673]Stopped Debugging.
+D3_L12=[21673]Started Editing.
+D3_L13=[22214]Stopped Editing.
+D3_L14=[22291]Started Editing.
+D3_L15=[22672]Stopped Editing.
+D3_L16=[23953]Started Editing.
+D3_L17=[24794]Stopped Editing.
+D3_L18=[24795]Started Debugging.
+D3_L19=[24919]Stopped Debugging.
+D3_L20=[24919]Started Editing.
+D3_L21=[25260]Stopped Editing.
+D3_L22=[25453]Started Editing.
+D3_L23=[26289]Stopped Editing.
+D3_L24=[27102]Started Editing.
+D3_L25=[27865]Stopped Editing.
+D3_L26=[28850]Started Editing.
+D3_L27=[29419]Stopped Editing.
+D3_L28=[29517]Started Editing.
+D3_L29=[30878]Stopped Editing.
+D3_L30=[31821]Started Editing.
+D3_L31=[32747]Stopped Editing.
+D3_L32=[34694]Started Editing.
+D3_L33=[34994]Stopped Editing.
+D3_L34=[35719]Started Editing.
+D3_L35=[36021]Stopped Editing.
+D3_L36=[39702]Started Editing.
+D3_L37=[40024]Stopped Editing.
+D3_L38=[40585]Started Editing.
+D3_L39=[40955]Stopped Editing.
+D3_L40=[41522]Started Editing.
+D3_L41=[41822]Stopped Editing.
+D3_E=107
+D3_D=22
+D3_L42=[43389]Project Closed.
+D3_L43=[62824]Project Opened.
+D3_L44=[63252]Started Editing.
+D3_L45=[63292]Stopped Editing.
+D3_L46=[63292]Started Debugging.
+D3_L47=[64252]Stopped Debugging.
+D3_L48=[64252]Project Closed.
+
+[Opened Files]
+1=Newheaven_UTC_Clock.c
+t1=31
+2=Hardware_Setup.h
+t2=6
+3=e:\Program Files (x86)\PICC\Drivers\input.c
+t3=127
+4=Display_All.h
+t4=1
+Count=2
+5=manual_set_time.h
+t5=1
+6=..\..\..\..\..\Program Files (x86)\PICC\Devices\18f4520.h
+t6=1
+
+[defines]
+buildcount=325
+
+[debugperif]
+selected=Analog to Digital Converter
+
+[debugbreak]
+count=0
+f1=F:\CSharpProject\LoadTime\NewHeaven_Ser_LCD MOD\Newheaven_UTC_Clock.c
+l1=83
+a.1=2744
+
+[debugwatch]
+count=2
+e1=hr1
+e2=buffer
+e3=date[i]
+e4=date
+e5=date
+e6=i
+e7=day[]
+
+[debugexpr]
+expr=
+sideeffects=1
+[Units]
+Count=1
+1=Newheaven_UTC_Clock (main)

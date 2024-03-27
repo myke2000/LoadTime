@@ -1,0 +1,124 @@
+[PROJECT]
+Target=Newheaven_test.hex
+Processor_Text=PIC18F26K22
+CCSVersion=5.115P
+Compiler=PCH
+[Target Data]
+FileList=Newheaven_test.c
+[Newheaven_test.c]
+Type=4
+[mru-list]
+1=Newheaven_test.c
+
+[defines]
+buildcount=105
+
+[Opened Files]
+1=Newheaven_test.c
+t1=13
+Count=4
+2=manual_set_time.h
+t2=16
+3=Hardware_Setup.h
+t3=1
+4=RTC_DS1307.h
+t4=103
+5=..\..\..\Program Files (x86)\PICC\Devices\18f26k22.h
+t5=1
+
+[ProjectLog]
+Days=6
+D1=02-01-2024
+D1_L=6
+D1_L1=[63107]Stopped Editing.
+D1_L2=[64143]Started Editing.
+D1_L3=[64868]Stopped Editing.
+D1_L4=[64940]Started Editing.
+D1_L5=[67864]Stopped Editing.
+TotalEdit=243
+TotalDebug=17
+D1_E=77
+D1_D=0
+D1_L6=[67864]Project Closed.
+D2=03-01-2024
+D2_L=28
+D2_L1=[37480]Project Opened.
+D2_L2=[38562]Started Editing.
+D2_L3=[39066]Stopped Editing.
+D2_L4=[39209]Started Editing.
+D2_L5=[40222]Stopped Editing.
+D2_L6=[40404]Started Editing.
+D2_L7=[40780]Stopped Editing.
+D2_L8=[41014]Started Editing.
+D2_L9=[41406]Stopped Editing.
+D2_L10=[41833]Started Editing.
+D2_L11=[42136]Stopped Editing.
+D2_L12=[42607]Started Debugging.
+D2_L13=[43607]Stopped Debugging.
+D2_L14=[43607]Started Editing.
+D2_L15=[45809]Stopped Editing.
+D2_L16=[45941]Started Editing.
+D2_L17=[48620]Stopped Editing.
+D2_L18=[48685]Started Editing.
+D2_L19=[49586]Stopped Editing.
+D2_L20=[49721]Started Editing.
+D2_L21=[50704]Stopped Editing.
+D2_L22=[50896]Started Editing.
+D2_L23=[52262]Stopped Editing.
+D2_L24=[55526]Started Editing.
+D2_L25=[56069]Stopped Editing.
+D2_L26=[59340]Started Editing.
+D2_L27=[60679]Stopped Editing.
+D2_E=156
+D2_D=17
+D2_L28=[60679]Project Closed.
+D3=04-01-2024
+D3_L=6
+D3_L1=[38150]Project Opened.
+D3_L2=[38173]Started Editing.
+D3_L3=[38972]Stopped Editing.
+D3_L4=[40304]Started Editing.
+D3_L5=[40604]Stopped Editing.
+D3_E=9
+D3_D=0
+D3_L6=[43133]Project Closed.
+D4=05-01-2024
+D4_L=2
+D4_L1=[36880]Project Opened.
+D4_L2=[66350]Project Closed.
+D5=06-01-2024
+D5_L=4
+D5_L1=[41678]Project Opened.
+D5_L2=[44523]Started Editing.
+D5_L3=[44823]Stopped Editing.
+D5_E=1
+D5_D=0
+D5_L4=[58506]Project Closed.
+D6=07-01-2024
+D6_L=2
+D6_L1=[50742]Project Opened.
+D6_L2=[50794]Project Closed.
+
+[fileformats]
+forcecoff=0
+
+[debugperif]
+selected=Analog to Digital Converter
+
+[debugbreak]
+count=1
+f1=C:\jvc projects\18F26K22 Experiments\NewHeaven_Ser_LCD\manual_set_time.h
+l1=49
+a.1=2352
+
+[debugwatch]
+e1=value
+e2=temp
+count=2
+
+[debugexpr]
+expr=
+sideeffects=1
+[Units]
+Count=1
+1=Newheaven_test (main)

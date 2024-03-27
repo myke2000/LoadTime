@@ -1,0 +1,2940 @@
+CCS PCH C Compiler, Version 5.115P, 47857               11-Mar-24 15:58
+
+               Filename:   C:\jvc projects\18F26K22 Experiments\NewHeaven_Ser_LCD\Newheaven_UTC_Clock_DST_fix\Newheaven_UTC_Clock_DST_fix.lst
+
+               ROM used:   4870 bytes (7%)
+                           Largest free fragment is 60666
+               RAM used:   19 (0%) at main() level
+                           23 (1%) worst case
+               Stack used: 2 locations
+               Stack size: 31
+
+*
+00000:  GOTO   1262
+.................... 
+.................... 
+.................... 
+.................... 
+....................       
+....................         #include <Hardware_Setup.h>
+....................    
+....................      #include <18f26k22.h>
+.................... //////////// Standard Header file for the PIC18F26K22 device ////////////////
+.................... ///////////////////////////////////////////////////////////////////////////
+.................... ////        (C) Copyright 1996, 2020 Custom Computer Services          ////
+.................... //// This source code may only be used by licensed users of the CCS C  ////
+.................... //// compiler.  This source code may only be distributed to other      ////
+.................... //// licensed users of the CCS C compiler.  No other use, reproduction ////
+.................... //// or distribution is permitted without written permission.          ////
+.................... //// Derivative programs created using this software in object code    ////
+.................... //// form are not restricted in any way.                               ////
+.................... ///////////////////////////////////////////////////////////////////////////
+.................... #device PIC18F26K22
+00004:  DATA 53,55
+00006:  DATA 4E,00
+00008:  DATA 4D,4F
+0000A:  DATA 4E,00
+0000C:  DATA 54,55
+0000E:  DATA 45,00
+00010:  DATA 57,45
+00012:  DATA 44,00
+00014:  DATA 54,48
+00016:  DATA 55,00
+00018:  DATA 46,52
+0001A:  DATA 49,00
+0001C:  DATA 53,41
+0001E:  DATA 54,00
+00020:  DATA 4A,41
+00022:  DATA 4E,00
+00024:  DATA 46,45
+00026:  DATA 42,00
+00028:  DATA 4D,41
+0002A:  DATA 52,00
+0002C:  DATA 41,50
+0002E:  DATA 52,00
+00030:  DATA 4D,41
+00032:  DATA 59,00
+00034:  DATA 4A,55
+00036:  DATA 4E,00
+00038:  DATA 4A,55
+0003A:  DATA 4C,00
+0003C:  DATA 41,55
+0003E:  DATA 47,00
+00040:  DATA 53,45
+00042:  DATA 50,00
+00044:  DATA 4F,43
+00046:  DATA 54,00
+00048:  DATA 4E,4F
+0004A:  DATA 56,00
+0004C:  DATA 44,45
+0004E:  DATA 43,00
+00050:  DATA 57,42
+00052:  DATA 39,49
+00054:  DATA 58,53
+00056:  DATA 20,55
+00058:  DATA 54,43
+0005A:  DATA 00,00
+0005C:  DATA 43,4C
+0005E:  DATA 4F,43
+00060:  DATA 4B,00
+00062:  DATA 55,54
+00064:  DATA 20,20
+00066:  DATA 20,3A
+00068:  DATA 20,20
+0006A:  DATA 00,00
+0006C:  DATA 43,54
+0006E:  DATA 20,20
+00070:  DATA 20,3A
+00072:  DATA 20,20
+00074:  DATA 3A,20
+00076:  DATA 20,00
+00078:  DATA 48,72
+0007A:  DATA 73,20
+0007C:  DATA 61,72
+0007E:  DATA 65,20
+00080:  DATA 32,34
+00082:  DATA 68,72
+00084:  DATA 20,66
+00086:  DATA 6F,72
+00088:  DATA 6D,61
+0008A:  DATA 74,00
+0008C:  DATA 48,72
+0008E:  DATA 73,20
+00090:  DATA 61,72
+00092:  DATA 65,20
+00094:  DATA 43,54
+00096:  DATA 20,74
+00098:  DATA 69,6D
+0009A:  DATA 65,20
+0009C:  DATA 55,54
+0009E:  DATA 43,00
+000A0:  DATA 74,69
+000A2:  DATA 6D,65
+000A4:  DATA 20,69
+000A6:  DATA 73,20
+000A8:  DATA 61,75
+000AA:  DATA 74,6F
+000AC:  DATA 6D,61
+000AE:  DATA 74,69
+000B0:  DATA 63,00
+000B2:  DATA 20,48
+000B4:  DATA 6F,75
+000B6:  DATA 72,73
+000B8:  DATA 20,3D
+000BA:  DATA 2D,3E
+000BC:  DATA 20,25
+000BE:  DATA 75,00
+000C0:  DATA 53,65
+000C2:  DATA 63,27
+000C4:  DATA 73,20
+000C6:  DATA 61,72
+000C8:  DATA 65,20
+000CA:  DATA 73,65
+000CC:  DATA 74,20
+000CE:  DATA 74,6F
+000D0:  DATA 20,30
+000D2:  DATA 20,00
+000D4:  DATA 77,68
+000D6:  DATA 65,6E
+000D8:  DATA 20,6D
+000DA:  DATA 69,6E
+000DC:  DATA 27,73
+000DE:  DATA 20,61
+000E0:  DATA 72,65
+000E2:  DATA 20,73
+000E4:  DATA 61,76
+000E6:  DATA 65,64
+000E8:  DATA 00,00
+000EA:  DATA 20,4D
+000EC:  DATA 69,6E
+000EE:  DATA 75,74
+000F0:  DATA 65,73
+000F2:  DATA 20,3D
+000F4:  DATA 2D,3E
+000F6:  DATA 20,25
+000F8:  DATA 75,00
+000FA:  DATA 31,3D
+000FC:  DATA 53,75
+000FE:  DATA 6E,32
+00100:  DATA 3D,4D
+00102:  DATA 6F,6E
+00104:  DATA 33,3D
+00106:  DATA 54,75
+00108:  DATA 65,34
+0010A:  DATA 3D,57
+0010C:  DATA 65,64
+0010E:  DATA 00,00
+00110:  DATA 35,3D
+00112:  DATA 54,68
+00114:  DATA 75,36
+00116:  DATA 3D,46
+00118:  DATA 72,69
+0011A:  DATA 37,3D
+0011C:  DATA 53,61
+0011E:  DATA 74,00
+00120:  DATA 44,61
+00122:  DATA 79,20
+00124:  DATA 3D,2D
+00126:  DATA 3E,25
+00128:  DATA 75,00
+0012A:  DATA 45,6E
+0012C:  DATA 74,65
+0012E:  DATA 72,20
+00130:  DATA 6D,6F
+00132:  DATA 6E,74
+00134:  DATA 68,20
+00136:  DATA 31,2D
+00138:  DATA 31,32
+0013A:  DATA 00,00
+0013C:  DATA 20,4D
+0013E:  DATA 6F,6E
+00140:  DATA 74,68
+00142:  DATA 20,3D
+00144:  DATA 2D,3E
+00146:  DATA 25,75
+00148:  DATA 00,00
+0014A:  DATA 45,6E
+0014C:  DATA 74,65
+0014E:  DATA 72,20
+00150:  DATA 44,61
+00152:  DATA 74,65
+00154:  DATA 20,31
+00156:  DATA 2D,33
+00158:  DATA 31,00
+0015A:  DATA 20,44
+0015C:  DATA 61,74
+0015E:  DATA 65,20
+00160:  DATA 3D,2D
+00162:  DATA 3E,25
+00164:  DATA 75,00
+00166:  DATA 45,6E
+00168:  DATA 74,65
+0016A:  DATA 72,20
+0016C:  DATA 36,20
+0016E:  DATA 66,6F
+00170:  DATA 72,20
+00172:  DATA 43,53
+00174:  DATA 54,20
+00176:  DATA 00,00
+00178:  DATA 45,6E
+0017A:  DATA 74,65
+0017C:  DATA 72,20
+0017E:  DATA 35,20
+00180:  DATA 66,6F
+00182:  DATA 72,20
+00184:  DATA 44,53
+00186:  DATA 54,20
+00188:  DATA 00,00
+0018A:  DATA 20,43
+0018C:  DATA 53,54
+0018E:  DATA 5F,44
+00190:  DATA 53,54
+00192:  DATA 20,76
+00194:  DATA 61,6C
+00196:  DATA 75,65
+00198:  DATA 20,3D
+0019A:  DATA 2D,3E
+0019C:  DATA 25,75
+0019E:  DATA 00,00
+001A0:  DATA 48,6F
+001A2:  DATA 75,72
+001A4:  DATA 73,2D
+001A6:  DATA 3E,25
+001A8:  DATA 75,00
+001AA:  DATA 20,4D
+001AC:  DATA 69,6E
+001AE:  DATA 2D,3E
+001B0:  DATA 00,00
+001B2:  DATA 20,20
+001B4:  DATA 57,42
+001B6:  DATA 39,49
+001B8:  DATA 58,53
+001BA:  DATA 20,55
+001BC:  DATA 54,43
+001BE:  DATA 20,43
+001C0:  DATA 4C,4F
+001C2:  DATA 43,4B
+001C4:  DATA 20,20
+001C6:  DATA 00,00
+*
+001F8:  TBLRD*+
+001FA:  MOVF   FF5,F
+001FC:  BZ    0218
+001FE:  MOVFF  FF6,12
+00202:  MOVFF  FF7,13
+00206:  MOVF   FF5,W
+00208:  BTFSS  F9E.4
+0020A:  BRA    0208
+0020C:  MOVWF  FAD
+0020E:  MOVFF  12,FF6
+00212:  MOVFF  13,FF7
+00216:  BRA    01F8
+00218:  RETURN 0
+*
+004A2:  MOVF   15,W
+004A4:  CLRF   01
+004A6:  SUBWF  14,W
+004A8:  BC    04B0
+004AA:  MOVFF  14,00
+004AE:  BRA    04C8
+004B0:  CLRF   00
+004B2:  MOVLW  08
+004B4:  MOVWF  16
+004B6:  RLCF   14,F
+004B8:  RLCF   00,F
+004BA:  MOVF   15,W
+004BC:  SUBWF  00,W
+004BE:  BTFSC  FD8.0
+004C0:  MOVWF  00
+004C2:  RLCF   01,F
+004C4:  DECFSZ 16,F
+004C6:  BRA    04B6
+004C8:  RETURN 0
+004CA:  MOVF   01,W
+004CC:  MOVFF  12,14
+004D0:  MOVLW  64
+004D2:  MOVWF  15
+004D4:  RCALL  04A2
+004D6:  MOVFF  00,12
+004DA:  MOVF   01,W
+004DC:  MOVLW  30
+004DE:  BNZ   04EE
+004E0:  BTFSS  13.1
+004E2:  BRA    04FE
+004E4:  BTFSC  13.3
+004E6:  BRA    04FE
+004E8:  BTFSC  13.4
+004EA:  MOVLW  20
+004EC:  BRA    04F4
+004EE:  BCF    13.3
+004F0:  BCF    13.4
+004F2:  BSF    13.0
+004F4:  ADDWF  01,F
+004F6:  MOVF   01,W
+004F8:  BTFSS  F9E.4
+004FA:  BRA    04F8
+004FC:  MOVWF  FAD
+004FE:  MOVFF  12,14
+00502:  MOVLW  0A
+00504:  MOVWF  15
+00506:  RCALL  04A2
+00508:  MOVFF  00,12
+0050C:  MOVF   01,W
+0050E:  MOVLW  30
+00510:  BNZ   051E
+00512:  BTFSC  13.3
+00514:  BRA    0528
+00516:  BTFSS  13.0
+00518:  BRA    0528
+0051A:  BTFSC  13.4
+0051C:  MOVLW  20
+0051E:  ADDWF  01,F
+00520:  MOVF   01,W
+00522:  BTFSS  F9E.4
+00524:  BRA    0522
+00526:  MOVWF  FAD
+00528:  MOVLW  30
+0052A:  ADDWF  12,F
+0052C:  MOVF   12,W
+0052E:  BTFSS  F9E.4
+00530:  BRA    052E
+00532:  MOVWF  FAD
+00534:  RETURN 0
+*
+009B2:  TBLRD*+
+009B4:  MOVFF  FF6,13
+009B8:  MOVFF  FF7,14
+009BC:  MOVF   FF5,W
+009BE:  BTFSS  F9E.4
+009C0:  BRA    09BE
+009C2:  MOVWF  FAD
+009C4:  MOVFF  13,FF6
+009C8:  MOVFF  14,FF7
+009CC:  DECFSZ 12,F
+009CE:  BRA    09B2
+009D0:  RETURN 0
+.................... 
+.................... #list
+.................... 
+....................      #fuses NOWDT,NOLVP,XT                   
+....................      #use delay(crystal=4mHz) 
+*
+001D0:  CLRF   FEA
+001D2:  MOVLW  13
+001D4:  MOVWF  FE9
+001D6:  MOVF   FEF,W
+001D8:  BZ    01F6
+001DA:  MOVLW  01
+001DC:  MOVWF  01
+001DE:  CLRF   00
+001E0:  DECFSZ 00,F
+001E2:  BRA    01E0
+001E4:  DECFSZ 01,F
+001E6:  BRA    01DE
+001E8:  MOVLW  4A
+001EA:  MOVWF  00
+001EC:  DECFSZ 00,F
+001EE:  BRA    01EC
+001F0:  BRA    01F2
+001F2:  DECFSZ FEF,F
+001F4:  BRA    01DA
+001F6:  RETURN 0
+....................      #use rs232(UART1,baud=9600)     
+*
+001C8:  BTFSS  F9E.4
+001CA:  BRA    01C8
+001CC:  MOVWF  FAD
+001CE:  RETURN 0
+....................      #USE I2C(MASTER,I2C1,FORCE_SW,fast=30000)) //100k is max for RTC ds1307
+*
+00274:  MOVLW  08
+00276:  MOVWF  01
+00278:  MOVLW  03
+0027A:  MOVWF  00
+0027C:  DECFSZ 00,F
+0027E:  BRA    027C
+00280:  BCF    F8B.3
+00282:  BCF    F94.3
+00284:  MOVLW  03
+00286:  MOVWF  00
+00288:  DECFSZ 00,F
+0028A:  BRA    0288
+0028C:  RLCF   12,F
+0028E:  BCF    F8B.4
+00290:  BTFSC  FD8.0
+00292:  BSF    F94.4
+00294:  BTFSS  FD8.0
+00296:  BCF    F94.4
+00298:  BSF    F94.3
+0029A:  BTFSS  F82.3
+0029C:  BRA    029A
+0029E:  DECFSZ 01,F
+002A0:  BRA    0278
+002A2:  MOVLW  03
+002A4:  MOVWF  00
+002A6:  DECFSZ 00,F
+002A8:  BRA    02A6
+002AA:  BCF    F8B.3
+002AC:  BCF    F94.3
+002AE:  NOP   
+002B0:  BSF    F94.4
+002B2:  MOVLW  03
+002B4:  MOVWF  00
+002B6:  DECFSZ 00,F
+002B8:  BRA    02B6
+002BA:  MOVLW  03
+002BC:  MOVWF  00
+002BE:  DECFSZ 00,F
+002C0:  BRA    02BE
+002C2:  BSF    F94.3
+002C4:  BTFSS  F82.3
+002C6:  BRA    02C4
+002C8:  CLRF   01
+002CA:  MOVLW  03
+002CC:  MOVWF  00
+002CE:  DECFSZ 00,F
+002D0:  BRA    02CE
+002D2:  BTFSC  F82.4
+002D4:  BSF    01.0
+002D6:  BCF    F8B.3
+002D8:  BCF    F94.3
+002DA:  BCF    F8B.4
+002DC:  BCF    F94.4
+002DE:  RETURN 0
+002E0:  MOVLW  08
+002E2:  MOVWF  13
+002E4:  MOVFF  00,14
+002E8:  BSF    F94.4
+002EA:  MOVLW  03
+002EC:  MOVWF  00
+002EE:  DECFSZ 00,F
+002F0:  BRA    02EE
+002F2:  BSF    F94.3
+002F4:  BTFSS  F82.3
+002F6:  BRA    02F4
+002F8:  BTFSC  F82.4
+002FA:  BSF    FD8.0
+002FC:  BTFSS  F82.4
+002FE:  BCF    FD8.0
+00300:  RLCF   01,F
+00302:  MOVLW  03
+00304:  MOVWF  00
+00306:  DECFSZ 00,F
+00308:  BRA    0306
+0030A:  BCF    F94.3
+0030C:  BCF    F8B.3
+0030E:  DECFSZ 13,F
+00310:  BRA    02E8
+00312:  BSF    F94.4
+00314:  MOVLW  03
+00316:  MOVWF  00
+00318:  DECFSZ 00,F
+0031A:  BRA    0318
+0031C:  BCF    F8B.4
+0031E:  MOVF   14,W
+00320:  BTFSS  FD8.2
+00322:  BCF    F94.4
+00324:  NOP   
+00326:  BSF    F94.3
+00328:  BTFSS  F82.3
+0032A:  BRA    0328
+0032C:  MOVLW  03
+0032E:  MOVWF  00
+00330:  DECFSZ 00,F
+00332:  BRA    0330
+00334:  BCF    F8B.3
+00336:  BCF    F94.3
+00338:  MOVLW  03
+0033A:  MOVWF  00
+0033C:  DECFSZ 00,F
+0033E:  BRA    033C
+00340:  BCF    F8B.4
+00342:  BCF    F94.4
+00344:  RETURN 0
+....................      
+....................       
+....................       
+....................       
+....................       
+.................... 
+....................         #include <RTC_DS1307_DST_fix.h>   // driver for the DS1307 RTC
+....................    
+....................    ///                                                                   /// 
+....................    ///                                                                   ///
+....................    ///       (0xD0) base address ds1307                                  ///
+....................    ///       THIS DRIVER WORKS WITH A DS3231 MODULE ALSO                 ///
+....................    ///       CST_DST value is stored in ds1307 memory reg 0x09           ///
+....................    ///                                                                   ///  
+....................       
+....................               
+....................        int8  second, minute, hour, date, month, year, day;
+....................        int8  utc_hour;
+....................        int8  CST_DST;
+....................        
+....................     void ds1307_display(){
+....................      // Convert BCD to decimal
+....................         second = (second >> 4) * 10 + (second & 0x0F);
+*
+00536:  SWAPF  04,W
+00538:  MOVWF  00
+0053A:  MOVLW  0F
+0053C:  ANDWF  00,F
+0053E:  MOVF   00,W
+00540:  MULLW  0A
+00542:  MOVFF  FF3,12
+00546:  MOVF   04,W
+00548:  ANDLW  0F
+0054A:  ADDWF  12,W
+0054C:  MOVWF  04
+....................         minute = (minute >> 4) * 10 + (minute & 0x0F);
+0054E:  SWAPF  05,W
+00550:  MOVWF  00
+00552:  MOVLW  0F
+00554:  ANDWF  00,F
+00556:  MOVF   00,W
+00558:  MULLW  0A
+0055A:  MOVFF  FF3,12
+0055E:  MOVF   05,W
+00560:  ANDLW  0F
+00562:  ADDWF  12,W
+00564:  MOVWF  05
+....................         hour =   (hour   >> 4) * 10 + (hour   & 0x0F);
+00566:  SWAPF  06,W
+00568:  MOVWF  00
+0056A:  MOVLW  0F
+0056C:  ANDWF  00,F
+0056E:  MOVF   00,W
+00570:  MULLW  0A
+00572:  MOVFF  FF3,12
+00576:  MOVF   06,W
+00578:  ANDLW  0F
+0057A:  ADDWF  12,W
+0057C:  MOVWF  06
+....................         date =   (date   >> 4) * 10 + (date   & 0x0F);
+0057E:  SWAPF  07,W
+00580:  MOVWF  00
+00582:  MOVLW  0F
+00584:  ANDWF  00,F
+00586:  MOVF   00,W
+00588:  MULLW  0A
+0058A:  MOVFF  FF3,12
+0058E:  MOVF   07,W
+00590:  ANDLW  0F
+00592:  ADDWF  12,W
+00594:  MOVWF  07
+....................         month =  (month  >> 4) * 10 + (month  & 0x0F);
+00596:  SWAPF  08,W
+00598:  MOVWF  00
+0059A:  MOVLW  0F
+0059C:  ANDWF  00,F
+0059E:  MOVF   00,W
+005A0:  MULLW  0A
+005A2:  MOVFF  FF3,12
+005A6:  MOVF   08,W
+005A8:  ANDLW  0F
+005AA:  ADDWF  12,W
+005AC:  MOVWF  08
+....................         year =   (year   >> 4) * 10 + (year   & 0x0F);
+005AE:  SWAPF  09,W
+005B0:  MOVWF  00
+005B2:  MOVLW  0F
+005B4:  ANDWF  00,F
+005B6:  MOVF   00,W
+005B8:  MULLW  0A
+005BA:  MOVFF  FF3,12
+005BE:  MOVF   09,W
+005C0:  ANDLW  0F
+005C2:  ADDWF  12,W
+005C4:  MOVWF  09
+....................      // End conversion
+....................      
+....................   // ******************************************************
+....................   //   THIS SECTION PRINTS THE UTC TIME                   *
+....................   // ******************************************************
+....................   
+....................    
+....................  // print UTC hrs           
+....................              utc_hour = hour + CST_DST; 
+005C6:  MOVF   0C,W
+005C8:  ADDWF  06,W
+005CA:  MOVWF  0B
+....................  // CST calculation 
+....................              if (CST_DST == 6){  // 6=CST
+005CC:  MOVF   0C,W
+005CE:  SUBLW  06
+005D0:  BNZ   05E4
+....................                    if (hour >17 && hour <25) {utc_hour = hour -18;}
+005D2:  MOVF   06,W
+005D4:  SUBLW  11
+005D6:  BC    05E4
+005D8:  MOVF   06,W
+005DA:  SUBLW  18
+005DC:  BNC   05E4
+005DE:  MOVLW  12
+005E0:  SUBWF  06,W
+005E2:  MOVWF  0B
+....................              }
+....................  // DST calculation            
+....................              if (CST_DST == 5){  // 5=DST
+005E4:  MOVF   0C,W
+005E6:  SUBLW  05
+005E8:  BNZ   05FC
+....................                    if (hour >18 && hour <25) {utc_hour = hour -19;}
+005EA:  MOVF   06,W
+005EC:  SUBLW  12
+005EE:  BC    05FC
+005F0:  MOVF   06,W
+005F2:  SUBLW  18
+005F4:  BNC   05FC
+005F6:  MOVLW  13
+005F8:  SUBWF  06,W
+005FA:  MOVWF  0B
+....................              }           
+....................                   
+....................           if (utc_hour<10){// add leading zero if hours <10   
+005FC:  MOVF   0B,W
+005FE:  SUBLW  09
+00600:  BNC   0628
+....................                 putc (0xfe); 
+00602:  MOVLW  FE
+00604:  RCALL  01C8
+....................                 putc (0x45); // cursor psn cmd
+00606:  MOVLW  45
+00608:  RCALL  01C8
+....................                 putc (0x17); // cursor psn
+0060A:  MOVLW  17
+0060C:  RCALL  01C8
+....................                 printf("0");
+0060E:  MOVLW  30
+00610:  BTFSS  F9E.4
+00612:  BRA    0610
+00614:  MOVWF  FAD
+....................                 putc (0xfe);  // cursor psn cmd
+00616:  MOVLW  FE
+00618:  RCALL  01C8
+....................                 putc (0x18);  // put the one's digit of the hours here
+0061A:  MOVLW  18
+0061C:  RCALL  01C8
+....................                 printf ("%u",utc_hour);
+0061E:  MOVFF  0B,12
+00622:  MOVLW  1B
+00624:  MOVWF  13
+00626:  RCALL  04CA
+....................              } 
+....................           if (utc_hour>9){ // if the hours is >10 then no leading zero's       
+00628:  MOVF   0B,W
+0062A:  SUBLW  09
+0062C:  BC    0644
+....................                putc (0xfe); 
+0062E:  MOVLW  FE
+00630:  RCALL  01C8
+....................                putc (0x45); // cursor psn cmd
+00632:  MOVLW  45
+00634:  RCALL  01C8
+....................                putc (0x17);  // cursor psn
+00636:  MOVLW  17
+00638:  RCALL  01C8
+....................                printf ("%u",utc_hour);
+0063A:  MOVFF  0B,12
+0063E:  MOVLW  1B
+00640:  MOVWF  13
+00642:  RCALL  04CA
+....................              } 
+....................      
+....................  //print UTC minutes    
+....................           if (minute<10){  // add leading zero if hours <10
+00644:  MOVF   05,W
+00646:  SUBLW  09
+00648:  BNC   0674
+....................              putc (0xfe);  
+0064A:  MOVLW  FE
+0064C:  RCALL  01C8
+....................              putc (0x45);  // cursor psn cmd
+0064E:  MOVLW  45
+00650:  RCALL  01C8
+....................              putc (0x1a);  // cursor psn
+00652:  MOVLW  1A
+00654:  RCALL  01C8
+....................              printf("0");             
+00656:  MOVLW  30
+00658:  BTFSS  F9E.4
+0065A:  BRA    0658
+0065C:  MOVWF  FAD
+....................              putc (0xfe);   
+0065E:  MOVLW  FE
+00660:  RCALL  01C8
+....................              putc (0x45);  // cursor psn cmd
+00662:  MOVLW  45
+00664:  RCALL  01C8
+....................              putc (0x1b);  // put the one's digit of the hours here
+00666:  MOVLW  1B
+00668:  RCALL  01C8
+....................              printf ("%u",minute);
+0066A:  MOVFF  05,12
+0066E:  MOVLW  1B
+00670:  MOVWF  13
+00672:  RCALL  04CA
+....................              } 
+....................           if (minute>9){   // if the hours is >10 then no leading zero's
+00674:  MOVF   05,W
+00676:  SUBLW  09
+00678:  BC    0690
+....................              putc (0xfe);  
+0067A:  MOVLW  FE
+0067C:  RCALL  01C8
+....................              putc (0x45);  // cursor psn cmd
+0067E:  MOVLW  45
+00680:  RCALL  01C8
+....................              putc (0x1a);  // cursor psn
+00682:  MOVLW  1A
+00684:  RCALL  01C8
+....................              printf ("%u",minute);
+00686:  MOVFF  05,12
+0068A:  MOVLW  1B
+0068C:  MOVWF  13
+0068E:  RCALL  04CA
+....................              }  
+....................         
+....................   // ******************************************************
+....................   //   THIS SECTION PRINTS THE CURRENT TIME               *
+....................   // ******************************************************
+....................   
+....................  //print CT hrs    
+....................           if (hour<10){    // add leading zero if hours <10
+00690:  MOVF   06,W
+00692:  SUBLW  09
+00694:  BNC   06BC
+....................              putc (0xFE);  
+00696:  MOVLW  FE
+00698:  RCALL  01C8
+....................              putc (0x45);  // cursor psn cmd
+0069A:  MOVLW  45
+0069C:  RCALL  01C8
+....................              putc (0x20);  // cursor psn
+0069E:  MOVLW  20
+006A0:  RCALL  01C8
+....................              printf("0");
+006A2:  MOVLW  30
+006A4:  BTFSS  F9E.4
+006A6:  BRA    06A4
+006A8:  MOVWF  FAD
+....................              putc (0xFE);  // cursor psn
+006AA:  MOVLW  FE
+006AC:  RCALL  01C8
+....................              putc (0x23);  // put the one's digit of the hours here
+006AE:  MOVLW  23
+006B0:  RCALL  01C8
+....................              printf ("%u",hour);
+006B2:  MOVFF  06,12
+006B6:  MOVLW  1B
+006B8:  MOVWF  13
+006BA:  RCALL  04CA
+....................              } 
+....................           if (hour>9){     // if the hours is >10 then no leading zero's
+006BC:  MOVF   06,W
+006BE:  SUBLW  09
+006C0:  BC    06D8
+....................              putc (0xFE);  
+006C2:  MOVLW  FE
+006C4:  RCALL  01C8
+....................              putc (0x45);  // cursor psn cmd
+006C6:  MOVLW  45
+006C8:  RCALL  01C8
+....................              putc (0x20);  // cursor psn
+006CA:  MOVLW  20
+006CC:  RCALL  01C8
+....................              printf ("%u",hour);
+006CE:  MOVFF  06,12
+006D2:  MOVLW  1B
+006D4:  MOVWF  13
+006D6:  RCALL  04CA
+....................              } 
+....................       
+....................  //print CT minutes    
+....................           if (minute<10){  // add leading zero if minutes <10
+006D8:  MOVF   05,W
+006DA:  SUBLW  09
+006DC:  BNC   0708
+....................              putc (0xFE);  
+006DE:  MOVLW  FE
+006E0:  RCALL  01C8
+....................              putc (0x45);  // cursor psn cmd
+006E2:  MOVLW  45
+006E4:  RCALL  01C8
+....................              putc (0x23);  // cursor psn
+006E6:  MOVLW  23
+006E8:  RCALL  01C8
+....................              printf("0");
+006EA:  MOVLW  30
+006EC:  BTFSS  F9E.4
+006EE:  BRA    06EC
+006F0:  MOVWF  FAD
+....................              putc (0xFE);  
+006F2:  MOVLW  FE
+006F4:  RCALL  01C8
+....................              putc (0x45);  // cursor psn cmd
+006F6:  MOVLW  45
+006F8:  RCALL  01C8
+....................              putc (0x24);  // put the one's digit of the minutes here
+006FA:  MOVLW  24
+006FC:  RCALL  01C8
+....................              printf ("%u",minute);
+006FE:  MOVFF  05,12
+00702:  MOVLW  1B
+00704:  MOVWF  13
+00706:  RCALL  04CA
+....................              } 
+....................           if (minute>9){   // if the minutes is >10 then no leading zero's
+00708:  MOVF   05,W
+0070A:  SUBLW  09
+0070C:  BC    0724
+....................              putc (0xFE);  
+0070E:  MOVLW  FE
+00710:  RCALL  01C8
+....................              putc (0x45);  // cursor psn cmd
+00712:  MOVLW  45
+00714:  RCALL  01C8
+....................              putc (0x23);  // cursor psn
+00716:  MOVLW  23
+00718:  RCALL  01C8
+....................              printf ("%u",minute);
+0071A:  MOVFF  05,12
+0071E:  MOVLW  1B
+00720:  MOVWF  13
+00722:  RCALL  04CA
+....................              }   
+.................... 
+....................  //print seconds 
+....................             
+....................           if (second<10){  // add leading zero if seconds <10
+00724:  MOVF   04,W
+00726:  SUBLW  09
+00728:  BNC   0754
+....................              putc (0xFE);
+0072A:  MOVLW  FE
+0072C:  RCALL  01C8
+....................              putc (0x45);  // cursor psn cmd
+0072E:  MOVLW  45
+00730:  RCALL  01C8
+....................              putc (0x26);  // cursor psn             
+00732:  MOVLW  26
+00734:  RCALL  01C8
+....................              printf("0");
+00736:  MOVLW  30
+00738:  BTFSS  F9E.4
+0073A:  BRA    0738
+0073C:  MOVWF  FAD
+....................              putc (0xFE);  
+0073E:  MOVLW  FE
+00740:  RCALL  01C8
+....................              putc (0x45);  // cursor psn cmd
+00742:  MOVLW  45
+00744:  RCALL  01C8
+....................              putc (0x27);  // put the one's digit of the seconds here
+00746:  MOVLW  27
+00748:  RCALL  01C8
+....................              printf ("%u",second);
+0074A:  MOVFF  04,12
+0074E:  MOVLW  1B
+00750:  MOVWF  13
+00752:  RCALL  04CA
+....................              } 
+....................           if (second>9){   // if the seconds is >10 then no leading zero's
+00754:  MOVF   04,W
+00756:  SUBLW  09
+00758:  BC    0770
+....................              putc (0xFE);  
+0075A:  MOVLW  FE
+0075C:  RCALL  01C8
+....................              putc (0x45);  // cursor psn cmd
+0075E:  MOVLW  45
+00760:  RCALL  01C8
+....................              putc (0x26);  // cursor psn
+00762:  MOVLW  26
+00764:  RCALL  01C8
+....................              printf ("%u",second);
+00766:  MOVFF  04,12
+0076A:  MOVLW  1B
+0076C:  MOVWF  13
+0076E:  RCALL  04CA
+....................              } 
+.................... 
+....................  //print day
+....................              putc (0xFE);  
+00770:  MOVLW  FE
+00772:  RCALL  01C8
+....................              putc (0x45);  // cursor psn cmd
+00774:  MOVLW  45
+00776:  RCALL  01C8
+....................              putc (0x59);  // cursor psn
+00778:  MOVLW  59
+0077A:  RCALL  01C8
+....................              if (day==1){printf ("SUN");}
+0077C:  DECFSZ 0A,W
+0077E:  BRA    078A
+00780:  MOVLW  04
+00782:  MOVWF  FF6
+00784:  MOVLW  00
+00786:  MOVWF  FF7
+00788:  RCALL  01F8
+....................              if (day==2){printf ("MON");}
+0078A:  MOVF   0A,W
+0078C:  SUBLW  02
+0078E:  BNZ   079A
+00790:  MOVLW  08
+00792:  MOVWF  FF6
+00794:  MOVLW  00
+00796:  MOVWF  FF7
+00798:  RCALL  01F8
+....................              if (day==3){printf ("TUE");}
+0079A:  MOVF   0A,W
+0079C:  SUBLW  03
+0079E:  BNZ   07AA
+007A0:  MOVLW  0C
+007A2:  MOVWF  FF6
+007A4:  MOVLW  00
+007A6:  MOVWF  FF7
+007A8:  RCALL  01F8
+....................              if (day==4){printf ("WED");}
+007AA:  MOVF   0A,W
+007AC:  SUBLW  04
+007AE:  BNZ   07BA
+007B0:  MOVLW  10
+007B2:  MOVWF  FF6
+007B4:  MOVLW  00
+007B6:  MOVWF  FF7
+007B8:  RCALL  01F8
+....................              if (day==5){printf ("THU");}
+007BA:  MOVF   0A,W
+007BC:  SUBLW  05
+007BE:  BNZ   07CA
+007C0:  MOVLW  14
+007C2:  MOVWF  FF6
+007C4:  MOVLW  00
+007C6:  MOVWF  FF7
+007C8:  RCALL  01F8
+....................              if (day==6){printf ("FRI");}
+007CA:  MOVF   0A,W
+007CC:  SUBLW  06
+007CE:  BNZ   07DA
+007D0:  MOVLW  18
+007D2:  MOVWF  FF6
+007D4:  MOVLW  00
+007D6:  MOVWF  FF7
+007D8:  RCALL  01F8
+....................              if (day==7){printf ("SAT");}               
+007DA:  MOVF   0A,W
+007DC:  SUBLW  07
+007DE:  BNZ   07EA
+007E0:  MOVLW  1C
+007E2:  MOVWF  FF6
+007E4:  MOVLW  00
+007E6:  MOVWF  FF7
+007E8:  RCALL  01F8
+....................   //print month
+....................              putc (0xFE);  
+007EA:  MOVLW  FE
+007EC:  RCALL  01C8
+....................              putc (0x45);  // cursor psn cmd
+007EE:  MOVLW  45
+007F0:  RCALL  01C8
+....................              putc (0x5D);  // cursor psn            
+007F2:  MOVLW  5D
+007F4:  RCALL  01C8
+....................              if (month==1){printf  ("JAN");}
+007F6:  DECFSZ 08,W
+007F8:  BRA    0804
+007FA:  MOVLW  20
+007FC:  MOVWF  FF6
+007FE:  MOVLW  00
+00800:  MOVWF  FF7
+00802:  RCALL  01F8
+....................              if (month==2){printf  ("FEB");}
+00804:  MOVF   08,W
+00806:  SUBLW  02
+00808:  BNZ   0814
+0080A:  MOVLW  24
+0080C:  MOVWF  FF6
+0080E:  MOVLW  00
+00810:  MOVWF  FF7
+00812:  RCALL  01F8
+....................              if (month==3){printf  ("MAR");}
+00814:  MOVF   08,W
+00816:  SUBLW  03
+00818:  BNZ   0824
+0081A:  MOVLW  28
+0081C:  MOVWF  FF6
+0081E:  MOVLW  00
+00820:  MOVWF  FF7
+00822:  RCALL  01F8
+....................              if (month==4){printf  ("APR");}
+00824:  MOVF   08,W
+00826:  SUBLW  04
+00828:  BNZ   0834
+0082A:  MOVLW  2C
+0082C:  MOVWF  FF6
+0082E:  MOVLW  00
+00830:  MOVWF  FF7
+00832:  RCALL  01F8
+....................              if (month==5){printf  ("MAY");}
+00834:  MOVF   08,W
+00836:  SUBLW  05
+00838:  BNZ   0844
+0083A:  MOVLW  30
+0083C:  MOVWF  FF6
+0083E:  MOVLW  00
+00840:  MOVWF  FF7
+00842:  RCALL  01F8
+....................              if (month==6){printf  ("JUN");}
+00844:  MOVF   08,W
+00846:  SUBLW  06
+00848:  BNZ   0854
+0084A:  MOVLW  34
+0084C:  MOVWF  FF6
+0084E:  MOVLW  00
+00850:  MOVWF  FF7
+00852:  RCALL  01F8
+....................              if (month==7){printf  ("JUL");} 
+00854:  MOVF   08,W
+00856:  SUBLW  07
+00858:  BNZ   0864
+0085A:  MOVLW  38
+0085C:  MOVWF  FF6
+0085E:  MOVLW  00
+00860:  MOVWF  FF7
+00862:  RCALL  01F8
+....................              if (month==8){printf  ("AUG");}
+00864:  MOVF   08,W
+00866:  SUBLW  08
+00868:  BNZ   0874
+0086A:  MOVLW  3C
+0086C:  MOVWF  FF6
+0086E:  MOVLW  00
+00870:  MOVWF  FF7
+00872:  RCALL  01F8
+....................              if (month==9){printf  ("SEP");}
+00874:  MOVF   08,W
+00876:  SUBLW  09
+00878:  BNZ   0884
+0087A:  MOVLW  40
+0087C:  MOVWF  FF6
+0087E:  MOVLW  00
+00880:  MOVWF  FF7
+00882:  RCALL  01F8
+....................              if (month==10){printf ("OCT");}
+00884:  MOVF   08,W
+00886:  SUBLW  0A
+00888:  BNZ   0894
+0088A:  MOVLW  44
+0088C:  MOVWF  FF6
+0088E:  MOVLW  00
+00890:  MOVWF  FF7
+00892:  RCALL  01F8
+....................              if (month==11){printf ("NOV");}
+00894:  MOVF   08,W
+00896:  SUBLW  0B
+00898:  BNZ   08A4
+0089A:  MOVLW  48
+0089C:  MOVWF  FF6
+0089E:  MOVLW  00
+008A0:  MOVWF  FF7
+008A2:  RCALL  01F8
+....................              if (month==12){printf ("DEC");}             
+008A4:  MOVF   08,W
+008A6:  SUBLW  0C
+008A8:  BNZ   08B4
+008AA:  MOVLW  4C
+008AC:  MOVWF  FF6
+008AE:  MOVLW  00
+008B0:  MOVWF  FF7
+008B2:  RCALL  01F8
+....................   //print date            
+....................              putc (0xFE);  
+008B4:  MOVLW  FE
+008B6:  RCALL  01C8
+....................              putc (0x45);  // cursor psn cmd
+008B8:  MOVLW  45
+008BA:  RCALL  01C8
+....................              putc (0x60);  // cursor            
+008BC:  MOVLW  60
+008BE:  RCALL  01C8
+....................              printf (" %u  ",date);
+008C0:  MOVLW  20
+008C2:  BTFSS  F9E.4
+008C4:  BRA    08C2
+008C6:  MOVWF  FAD
+008C8:  MOVFF  07,12
+008CC:  MOVLW  1B
+008CE:  MOVWF  13
+008D0:  RCALL  04CA
+008D2:  MOVLW  20
+008D4:  BTFSS  F9E.4
+008D6:  BRA    08D4
+008D8:  MOVWF  FAD
+008DA:  MOVLW  20
+008DC:  BTFSS  F9E.4
+008DE:  BRA    08DC
+008E0:  MOVWF  FAD
+008E2:  GOTO   09A8 (RETURN)
+....................              
+....................        } //END ds1307_display  
+....................      
+....................     
+....................     void write_Seconds()
+....................       {
+....................        i2c_start();
+*
+00A96:  BSF    F94.4
+00A98:  MOVLW  03
+00A9A:  MOVWF  00
+00A9C:  DECFSZ 00,F
+00A9E:  BRA    0A9C
+00AA0:  BSF    F94.3
+00AA2:  MOVLW  03
+00AA4:  MOVWF  00
+00AA6:  DECFSZ 00,F
+00AA8:  BRA    0AA6
+00AAA:  BCF    F8B.4
+00AAC:  BCF    F94.4
+00AAE:  MOVLW  03
+00AB0:  MOVWF  00
+00AB2:  DECFSZ 00,F
+00AB4:  BRA    0AB2
+00AB6:  BCF    F8B.3
+00AB8:  BCF    F94.3
+....................        i2c_write(0xD0); //base address ds1307
+00ABA:  MOVLW  D0
+00ABC:  MOVWF  12
+00ABE:  CALL   0274
+....................        i2c_write(0);    //seconds address
+00AC2:  CLRF   12
+00AC4:  CALL   0274
+....................        i2c_write(0x00);  //seconds are set to zero (00)
+00AC8:  CLRF   12
+00ACA:  CALL   0274
+....................        i2c_stop();  
+00ACE:  BCF    F94.4
+00AD0:  NOP   
+00AD2:  BSF    F94.3
+00AD4:  BTFSS  F82.3
+00AD6:  BRA    0AD4
+00AD8:  MOVLW  03
+00ADA:  MOVWF  00
+00ADC:  DECFSZ 00,F
+00ADE:  BRA    0ADC
+00AE0:  BRA    0AE2
+00AE2:  NOP   
+00AE4:  BSF    F94.4
+00AE6:  MOVLW  03
+00AE8:  MOVWF  00
+00AEA:  DECFSZ 00,F
+00AEC:  BRA    0AEA
+....................        delay_ms(10);
+00AEE:  MOVLW  0A
+00AF0:  MOVWF  13
+00AF2:  CALL   01D0
+00AF6:  GOTO   0EB6 (RETURN)
+....................       }
+....................      
+....................     void Write_Minutes()
+....................       {
+....................        i2c_start();
+*
+00A34:  BSF    F94.4
+00A36:  MOVLW  03
+00A38:  MOVWF  00
+00A3A:  DECFSZ 00,F
+00A3C:  BRA    0A3A
+00A3E:  BSF    F94.3
+00A40:  MOVLW  03
+00A42:  MOVWF  00
+00A44:  DECFSZ 00,F
+00A46:  BRA    0A44
+00A48:  BCF    F8B.4
+00A4A:  BCF    F94.4
+00A4C:  MOVLW  03
+00A4E:  MOVWF  00
+00A50:  DECFSZ 00,F
+00A52:  BRA    0A50
+00A54:  BCF    F8B.3
+00A56:  BCF    F94.3
+....................        i2c_write(0xD0);   //base address ds1307
+00A58:  MOVLW  D0
+00A5A:  MOVWF  12
+00A5C:  RCALL  0274
+....................        i2c_write(0x01);   //minutes reg address
+00A5E:  MOVLW  01
+00A60:  MOVWF  12
+00A62:  RCALL  0274
+....................        i2c_write(minute); //set minutes reg to this value
+00A64:  MOVFF  05,12
+00A68:  RCALL  0274
+....................        i2c_stop();
+00A6A:  BCF    F94.4
+00A6C:  NOP   
+00A6E:  BSF    F94.3
+00A70:  BTFSS  F82.3
+00A72:  BRA    0A70
+00A74:  MOVLW  03
+00A76:  MOVWF  00
+00A78:  DECFSZ 00,F
+00A7A:  BRA    0A78
+00A7C:  BRA    0A7E
+00A7E:  NOP   
+00A80:  BSF    F94.4
+00A82:  MOVLW  03
+00A84:  MOVWF  00
+00A86:  DECFSZ 00,F
+00A88:  BRA    0A86
+....................        delay_ms(10);
+00A8A:  MOVLW  0A
+00A8C:  MOVWF  13
+00A8E:  CALL   01D0
+....................        break;
+00A92:  GOTO   0EB4 (RETURN)
+....................       }
+....................      
+....................     void Write_Hours()
+....................       {
+....................        i2c_start();
+*
+009D2:  BSF    F94.4
+009D4:  MOVLW  03
+009D6:  MOVWF  00
+009D8:  DECFSZ 00,F
+009DA:  BRA    09D8
+009DC:  BSF    F94.3
+009DE:  MOVLW  03
+009E0:  MOVWF  00
+009E2:  DECFSZ 00,F
+009E4:  BRA    09E2
+009E6:  BCF    F8B.4
+009E8:  BCF    F94.4
+009EA:  MOVLW  03
+009EC:  MOVWF  00
+009EE:  DECFSZ 00,F
+009F0:  BRA    09EE
+009F2:  BCF    F8B.3
+009F4:  BCF    F94.3
+....................        i2c_write(0xD0); //base address ds1307
+009F6:  MOVLW  D0
+009F8:  MOVWF  12
+009FA:  RCALL  0274
+....................        i2c_write(0x02); //hours reg address
+009FC:  MOVLW  02
+009FE:  MOVWF  12
+00A00:  RCALL  0274
+....................        i2c_write(hour); //set hours to this value
+00A02:  MOVFF  06,12
+00A06:  RCALL  0274
+....................        i2c_stop();
+00A08:  BCF    F94.4
+00A0A:  NOP   
+00A0C:  BSF    F94.3
+00A0E:  BTFSS  F82.3
+00A10:  BRA    0A0E
+00A12:  MOVLW  03
+00A14:  MOVWF  00
+00A16:  DECFSZ 00,F
+00A18:  BRA    0A16
+00A1A:  BRA    0A1C
+00A1C:  NOP   
+00A1E:  BSF    F94.4
+00A20:  MOVLW  03
+00A22:  MOVWF  00
+00A24:  DECFSZ 00,F
+00A26:  BRA    0A24
+....................        delay_ms(10);
+00A28:  MOVLW  0A
+00A2A:  MOVWF  13
+00A2C:  CALL   01D0
+....................        break;
+00A30:  GOTO   0DC6 (RETURN)
+....................       }
+....................        
+....................     void Write_Days()
+....................       {
+....................        i2c_start();
+*
+00AFA:  BSF    F94.4
+00AFC:  MOVLW  03
+00AFE:  MOVWF  00
+00B00:  DECFSZ 00,F
+00B02:  BRA    0B00
+00B04:  BSF    F94.3
+00B06:  MOVLW  03
+00B08:  MOVWF  00
+00B0A:  DECFSZ 00,F
+00B0C:  BRA    0B0A
+00B0E:  BCF    F8B.4
+00B10:  BCF    F94.4
+00B12:  MOVLW  03
+00B14:  MOVWF  00
+00B16:  DECFSZ 00,F
+00B18:  BRA    0B16
+00B1A:  BCF    F8B.3
+00B1C:  BCF    F94.3
+....................        i2c_write(0xD0); //base address ds1307
+00B1E:  MOVLW  D0
+00B20:  MOVWF  12
+00B22:  CALL   0274
+....................        i2c_write(0x03); //days reg address
+00B26:  MOVLW  03
+00B28:  MOVWF  12
+00B2A:  CALL   0274
+....................        i2c_write(day);  //set days reg to this value
+00B2E:  MOVFF  0A,12
+00B32:  CALL   0274
+....................        i2c_stop(); 
+00B36:  BCF    F94.4
+00B38:  NOP   
+00B3A:  BSF    F94.3
+00B3C:  BTFSS  F82.3
+00B3E:  BRA    0B3C
+00B40:  MOVLW  03
+00B42:  MOVWF  00
+00B44:  DECFSZ 00,F
+00B46:  BRA    0B44
+00B48:  BRA    0B4A
+00B4A:  NOP   
+00B4C:  BSF    F94.4
+00B4E:  MOVLW  03
+00B50:  MOVWF  00
+00B52:  DECFSZ 00,F
+00B54:  BRA    0B52
+....................        delay_ms(10);
+00B56:  MOVLW  0A
+00B58:  MOVWF  13
+00B5A:  CALL   01D0
+....................        break;
+00B5E:  GOTO   0FB0 (RETURN)
+....................       }
+.................... 
+....................     void Write_Date()
+....................       {
+....................        i2c_start();
+*
+00BCA:  BSF    F94.4
+00BCC:  MOVLW  03
+00BCE:  MOVWF  00
+00BD0:  DECFSZ 00,F
+00BD2:  BRA    0BD0
+00BD4:  BSF    F94.3
+00BD6:  MOVLW  03
+00BD8:  MOVWF  00
+00BDA:  DECFSZ 00,F
+00BDC:  BRA    0BDA
+00BDE:  BCF    F8B.4
+00BE0:  BCF    F94.4
+00BE2:  MOVLW  03
+00BE4:  MOVWF  00
+00BE6:  DECFSZ 00,F
+00BE8:  BRA    0BE6
+00BEA:  BCF    F8B.3
+00BEC:  BCF    F94.3
+....................        i2c_write(0xD0); //base address ds1307
+00BEE:  MOVLW  D0
+00BF0:  MOVWF  12
+00BF2:  CALL   0274
+....................        i2c_write(0x04); //date reg address
+00BF6:  MOVLW  04
+00BF8:  MOVWF  12
+00BFA:  CALL   0274
+....................        i2c_write(date); //set date reg to this value
+00BFE:  MOVFF  07,12
+00C02:  CALL   0274
+....................        i2c_stop(); 
+00C06:  BCF    F94.4
+00C08:  NOP   
+00C0A:  BSF    F94.3
+00C0C:  BTFSS  F82.3
+00C0E:  BRA    0C0C
+00C10:  MOVLW  03
+00C12:  MOVWF  00
+00C14:  DECFSZ 00,F
+00C16:  BRA    0C14
+00C18:  BRA    0C1A
+00C1A:  NOP   
+00C1C:  BSF    F94.4
+00C1E:  MOVLW  03
+00C20:  MOVWF  00
+00C22:  DECFSZ 00,F
+00C24:  BRA    0C22
+....................        delay_ms(10);
+00C26:  MOVLW  0A
+00C28:  MOVWF  13
+00C2A:  CALL   01D0
+....................        break;
+00C2E:  GOTO   1160 (RETURN)
+....................       }
+.................... 
+....................     void Write_Months()
+....................       {
+....................        i2c_start();
+*
+00B62:  BSF    F94.4
+00B64:  MOVLW  03
+00B66:  MOVWF  00
+00B68:  DECFSZ 00,F
+00B6A:  BRA    0B68
+00B6C:  BSF    F94.3
+00B6E:  MOVLW  03
+00B70:  MOVWF  00
+00B72:  DECFSZ 00,F
+00B74:  BRA    0B72
+00B76:  BCF    F8B.4
+00B78:  BCF    F94.4
+00B7A:  MOVLW  03
+00B7C:  MOVWF  00
+00B7E:  DECFSZ 00,F
+00B80:  BRA    0B7E
+00B82:  BCF    F8B.3
+00B84:  BCF    F94.3
+....................        i2c_write(0xD0); //base address ds1307
+00B86:  MOVLW  D0
+00B88:  MOVWF  12
+00B8A:  CALL   0274
+....................        i2c_write(0x05); //months reg address
+00B8E:  MOVLW  05
+00B90:  MOVWF  12
+00B92:  CALL   0274
+....................        i2c_write(month);//set months reg to this value
+00B96:  MOVFF  08,12
+00B9A:  CALL   0274
+....................        i2c_stop(); 
+00B9E:  BCF    F94.4
+00BA0:  NOP   
+00BA2:  BSF    F94.3
+00BA4:  BTFSS  F82.3
+00BA6:  BRA    0BA4
+00BA8:  MOVLW  03
+00BAA:  MOVWF  00
+00BAC:  DECFSZ 00,F
+00BAE:  BRA    0BAC
+00BB0:  BRA    0BB2
+00BB2:  NOP   
+00BB4:  BSF    F94.4
+00BB6:  MOVLW  03
+00BB8:  MOVWF  00
+00BBA:  DECFSZ 00,F
+00BBC:  BRA    0BBA
+....................        delay_ms(10);
+00BBE:  MOVLW  0A
+00BC0:  MOVWF  13
+00BC2:  CALL   01D0
+....................        break;
+00BC6:  GOTO   108C (RETURN)
+....................       }
+....................   
+....................     void Write_Years()
+....................       {
+....................        i2c_start();
+....................        i2c_write(0xD0); //base address ds1307
+....................        i2c_write(0x06); //year reg address
+....................        i2c_write(year); //set year reg to this value
+....................        i2c_stop();
+....................        delay_ms(10);
+....................       }
+....................     
+....................     void Write_CST_DST() 
+....................       {
+....................        i2c_start();
+*
+00C32:  BSF    F94.4
+00C34:  MOVLW  03
+00C36:  MOVWF  00
+00C38:  DECFSZ 00,F
+00C3A:  BRA    0C38
+00C3C:  BSF    F94.3
+00C3E:  MOVLW  03
+00C40:  MOVWF  00
+00C42:  DECFSZ 00,F
+00C44:  BRA    0C42
+00C46:  BCF    F8B.4
+00C48:  BCF    F94.4
+00C4A:  MOVLW  03
+00C4C:  MOVWF  00
+00C4E:  DECFSZ 00,F
+00C50:  BRA    0C4E
+00C52:  BCF    F8B.3
+00C54:  BCF    F94.3
+....................        i2c_write(0xD0); //base address ds1307
+00C56:  MOVLW  D0
+00C58:  MOVWF  12
+00C5A:  CALL   0274
+....................        i2c_write(0x09); //CST_DST reg address
+00C5E:  MOVLW  09
+00C60:  MOVWF  12
+00C62:  CALL   0274
+....................        i2c_write(CST_DST);//set CST_DST reg to this value
+00C66:  MOVFF  0C,12
+00C6A:  CALL   0274
+....................        i2c_stop(); 
+00C6E:  BCF    F94.4
+00C70:  NOP   
+00C72:  BSF    F94.3
+00C74:  BTFSS  F82.3
+00C76:  BRA    0C74
+00C78:  MOVLW  03
+00C7A:  MOVWF  00
+00C7C:  DECFSZ 00,F
+00C7E:  BRA    0C7C
+00C80:  BRA    0C82
+00C82:  NOP   
+00C84:  BSF    F94.4
+00C86:  MOVLW  03
+00C88:  MOVWF  00
+00C8A:  DECFSZ 00,F
+00C8C:  BRA    0C8A
+....................        delay_ms(10);
+00C8E:  MOVLW  0A
+00C90:  MOVWF  13
+00C92:  CALL   01D0
+00C96:  GOTO   123A (RETURN)
+....................       }                      
+....................       
+....................      void Read_CST_DST()
+....................       { 
+....................        i2c_start();                  // Start I2C protocol
+*
+00410:  BSF    F94.4
+00412:  MOVLW  03
+00414:  MOVWF  00
+00416:  DECFSZ 00,F
+00418:  BRA    0416
+0041A:  BSF    F94.3
+0041C:  MOVLW  03
+0041E:  MOVWF  00
+00420:  DECFSZ 00,F
+00422:  BRA    0420
+00424:  BCF    F8B.4
+00426:  BCF    F94.4
+00428:  MOVLW  03
+0042A:  MOVWF  00
+0042C:  DECFSZ 00,F
+0042E:  BRA    042C
+00430:  BCF    F8B.3
+00432:  BCF    F94.3
+....................        i2c_write(0xD0);              // DS1307 address
+00434:  MOVLW  D0
+00436:  MOVWF  12
+00438:  RCALL  0274
+....................        i2c_write(0x09);              // Send register address
+0043A:  MOVLW  09
+0043C:  MOVWF  12
+0043E:  RCALL  0274
+....................        i2c_start();                  // Restart I2C
+00440:  BSF    F94.4
+00442:  MOVLW  03
+00444:  MOVWF  00
+00446:  DECFSZ 00,F
+00448:  BRA    0446
+0044A:  BSF    F94.3
+0044C:  MOVLW  03
+0044E:  MOVWF  00
+00450:  DECFSZ 00,F
+00452:  BRA    0450
+00454:  BTFSS  F82.3
+00456:  BRA    0454
+00458:  BCF    F8B.4
+0045A:  BCF    F94.4
+0045C:  MOVLW  03
+0045E:  MOVWF  00
+00460:  DECFSZ 00,F
+00462:  BRA    0460
+00464:  BCF    F8B.3
+00466:  BCF    F94.3
+....................        i2c_write(0xD1);              // Initialize data read
+00468:  MOVLW  D1
+0046A:  MOVWF  12
+0046C:  RCALL  0274
+....................        CST_DST = i2c_read(0x09);     // Read CST_DST from register
+0046E:  MOVLW  09
+00470:  MOVWF  00
+00472:  RCALL  02E0
+00474:  MOVFF  01,0C
+....................        i2c_stop();                   // Stop I2C protocol
+00478:  BCF    F94.4
+0047A:  NOP   
+0047C:  BSF    F94.3
+0047E:  BTFSS  F82.3
+00480:  BRA    047E
+00482:  MOVLW  03
+00484:  MOVWF  00
+00486:  DECFSZ 00,F
+00488:  BRA    0486
+0048A:  BRA    048C
+0048C:  NOP   
+0048E:  BSF    F94.4
+00490:  MOVLW  03
+00492:  MOVWF  00
+00494:  DECFSZ 00,F
+00496:  BRA    0494
+....................        delay_ms(10);               
+00498:  MOVLW  0A
+0049A:  MOVWF  13
+0049C:  RCALL  01D0
+0049E:  GOTO   12F6 (RETURN)
+....................       }//end read_CST_DST    
+....................       
+....................     void Read_All_RTC_Regs() 
+....................       { 
+....................        i2c_start();                  // Start I2C protocol
+*
+008E6:  BSF    F94.4
+008E8:  MOVLW  03
+008EA:  MOVWF  00
+008EC:  DECFSZ 00,F
+008EE:  BRA    08EC
+008F0:  BSF    F94.3
+008F2:  MOVLW  03
+008F4:  MOVWF  00
+008F6:  DECFSZ 00,F
+008F8:  BRA    08F6
+008FA:  BCF    F8B.4
+008FC:  BCF    F94.4
+008FE:  MOVLW  03
+00900:  MOVWF  00
+00902:  DECFSZ 00,F
+00904:  BRA    0902
+00906:  BCF    F8B.3
+00908:  BCF    F94.3
+....................        i2c_write(0xD0);              // DS1307 address
+0090A:  MOVLW  D0
+0090C:  MOVWF  12
+0090E:  RCALL  0274
+....................        i2c_write(0);                 // Send register address
+00910:  CLRF   12
+00912:  RCALL  0274
+....................        i2c_start();                  // Restart I2C
+00914:  BSF    F94.4
+00916:  MOVLW  03
+00918:  MOVWF  00
+0091A:  DECFSZ 00,F
+0091C:  BRA    091A
+0091E:  BSF    F94.3
+00920:  MOVLW  03
+00922:  MOVWF  00
+00924:  DECFSZ 00,F
+00926:  BRA    0924
+00928:  BTFSS  F82.3
+0092A:  BRA    0928
+0092C:  BCF    F8B.4
+0092E:  BCF    F94.4
+00930:  MOVLW  03
+00932:  MOVWF  00
+00934:  DECFSZ 00,F
+00936:  BRA    0934
+00938:  BCF    F8B.3
+0093A:  BCF    F94.3
+....................        i2c_write(0xD1);              // Initialize data read
+0093C:  MOVLW  D1
+0093E:  MOVWF  12
+00940:  RCALL  0274
+....................        second = i2c_read(1);         // Read seconds from register 0
+00942:  MOVLW  01
+00944:  MOVWF  00
+00946:  RCALL  02E0
+00948:  MOVFF  01,04
+....................        minute = i2c_read(1);         // Read minutes from register 1
+0094C:  MOVLW  01
+0094E:  MOVWF  00
+00950:  RCALL  02E0
+00952:  MOVFF  01,05
+....................        hour   = i2c_read(1);         // Read hour from register 2
+00956:  MOVLW  01
+00958:  MOVWF  00
+0095A:  RCALL  02E0
+0095C:  MOVFF  01,06
+....................        day    = i2c_read(1);         // Read day from register 3
+00960:  MOVLW  01
+00962:  MOVWF  00
+00964:  RCALL  02E0
+00966:  MOVFF  01,0A
+....................        date   = i2c_read(1);         // Read date from register 4
+0096A:  MOVLW  01
+0096C:  MOVWF  00
+0096E:  RCALL  02E0
+00970:  MOVFF  01,07
+....................        month  = i2c_read(1);         // Read month from register 5
+00974:  MOVLW  01
+00976:  MOVWF  00
+00978:  RCALL  02E0
+0097A:  MOVFF  01,08
+....................        year   = i2c_read(0);         // Read year from register 6
+0097E:  CLRF   00
+00980:  RCALL  02E0
+00982:  MOVFF  01,09
+....................        i2c_stop();                   // Stop I2C protocol
+00986:  BCF    F94.4
+00988:  NOP   
+0098A:  BSF    F94.3
+0098C:  BTFSS  F82.3
+0098E:  BRA    098C
+00990:  MOVLW  03
+00992:  MOVWF  00
+00994:  DECFSZ 00,F
+00996:  BRA    0994
+00998:  BRA    099A
+0099A:  NOP   
+0099C:  BSF    F94.4
+0099E:  MOVLW  03
+009A0:  MOVWF  00
+009A2:  DECFSZ 00,F
+009A4:  BRA    09A2
+....................        ds1307_display();             // Display time & calendar
+009A6:  BRA    0536
+....................        delay_ms(100);                // This delay stops the LCD fom flashing
+009A8:  MOVLW  64
+009AA:  MOVWF  13
+009AC:  RCALL  01D0
+009AE:  GOTO   12FA (RETURN)
+....................       }//end read_All_RTC_Regs       
+....................       
+....................     void Read_All_RTC_Regs_At_Start() //read all ds1307 regs without display
+....................       { 
+....................        i2c_start();                  // Start I2C protocol
+*
+00346:  BSF    F94.4
+00348:  MOVLW  03
+0034A:  MOVWF  00
+0034C:  DECFSZ 00,F
+0034E:  BRA    034C
+00350:  BSF    F94.3
+00352:  MOVLW  03
+00354:  MOVWF  00
+00356:  DECFSZ 00,F
+00358:  BRA    0356
+0035A:  BCF    F8B.4
+0035C:  BCF    F94.4
+0035E:  MOVLW  03
+00360:  MOVWF  00
+00362:  DECFSZ 00,F
+00364:  BRA    0362
+00366:  BCF    F8B.3
+00368:  BCF    F94.3
+....................        i2c_write(0xD0);              // DS1307 address
+0036A:  MOVLW  D0
+0036C:  MOVWF  12
+0036E:  RCALL  0274
+....................        i2c_write(0);                 // Send register address
+00370:  CLRF   12
+00372:  RCALL  0274
+....................        i2c_start();                  // Restart I2C
+00374:  BSF    F94.4
+00376:  MOVLW  03
+00378:  MOVWF  00
+0037A:  DECFSZ 00,F
+0037C:  BRA    037A
+0037E:  BSF    F94.3
+00380:  MOVLW  03
+00382:  MOVWF  00
+00384:  DECFSZ 00,F
+00386:  BRA    0384
+00388:  BTFSS  F82.3
+0038A:  BRA    0388
+0038C:  BCF    F8B.4
+0038E:  BCF    F94.4
+00390:  MOVLW  03
+00392:  MOVWF  00
+00394:  DECFSZ 00,F
+00396:  BRA    0394
+00398:  BCF    F8B.3
+0039A:  BCF    F94.3
+....................        i2c_write(0xD1);              // Initialize data read
+0039C:  MOVLW  D1
+0039E:  MOVWF  12
+003A0:  RCALL  0274
+....................        second = i2c_read(1);         // Read seconds from register 0
+003A2:  MOVLW  01
+003A4:  MOVWF  00
+003A6:  RCALL  02E0
+003A8:  MOVFF  01,04
+....................        minute = i2c_read(1);         // Read minuts from register 1
+003AC:  MOVLW  01
+003AE:  MOVWF  00
+003B0:  RCALL  02E0
+003B2:  MOVFF  01,05
+....................        hour   = i2c_read(1);         // Read hour from register 2
+003B6:  MOVLW  01
+003B8:  MOVWF  00
+003BA:  RCALL  02E0
+003BC:  MOVFF  01,06
+....................        day    = i2c_read(1);         // Read day from register 3
+003C0:  MOVLW  01
+003C2:  MOVWF  00
+003C4:  RCALL  02E0
+003C6:  MOVFF  01,0A
+....................        date   = i2c_read(1);         // Read date from register 4
+003CA:  MOVLW  01
+003CC:  MOVWF  00
+003CE:  RCALL  02E0
+003D0:  MOVFF  01,07
+....................        month  = i2c_read(1);         // Read month from register 5
+003D4:  MOVLW  01
+003D6:  MOVWF  00
+003D8:  RCALL  02E0
+003DA:  MOVFF  01,08
+....................        year   = i2c_read(0);         // Read year from register 6
+003DE:  CLRF   00
+003E0:  RCALL  02E0
+003E2:  MOVFF  01,09
+....................        i2c_stop(); // Stop I2C protocol
+003E6:  BCF    F94.4
+003E8:  NOP   
+003EA:  BSF    F94.3
+003EC:  BTFSS  F82.3
+003EE:  BRA    03EC
+003F0:  MOVLW  03
+003F2:  MOVWF  00
+003F4:  DECFSZ 00,F
+003F6:  BRA    03F4
+003F8:  BRA    03FA
+003FA:  NOP   
+003FC:  BSF    F94.4
+003FE:  MOVLW  03
+00400:  MOVWF  00
+00402:  DECFSZ 00,F
+00404:  BRA    0402
+....................        delay_ms(10);                // This delay stops the LCD fom flashing
+00406:  MOVLW  0A
+00408:  MOVWF  13
+0040A:  RCALL  01D0
+0040C:  GOTO   12F2 (RETURN)
+....................       }//end read_All_RTC_Regs_At_Start    
+....................     
+.................... 
+....................         #include <manual_set_time_DST_fix.h>
+.................... 
+....................     
+....................       
+.................... 
+....................    
+....................    /// This file is used to read the thumbwheel switch and 3 push buttons  /// 
+....................    /// Start PB Increment PB Save PB                                       ///
+....................    /// The seconds are zeroed when the minutes are entered                 ///
+....................    ///                                                                     ///
+....................    /// All the inputs are pulled up high so all the true input data is     ///
+....................    /// tested as Low = true. Only the first 3 bits of the thumbwheel       ///
+....................    /// switch are being used that allows for 8 different selections only   ///
+....................    /// 6 are being used hours,minutes,day,month,date and CST_DST value     ///
+....................    /// CST value = 6 DST value = 5                                         ///
+....................   
+....................    /// The day-of-week register in the DS1307 counts from 1 through 7      /// 
+....................    /// It doesn't know anything about Sunday, Monday, etc.  It's just a    ///
+....................    /// counter that is incremented every day at midnight.                  ///
+....................    /// If you want the first day of the week to be Sunday and today is     ///
+....................    /// Sunday set the day-of-week to the value 1.  If today is Monday set  ///
+....................    /// the day-of-week to the value 2, etc.Then every time you read the    ///
+....................    /// day of week from the DS1307 1 ==> Sunday 2 ==> Monday etc           ///
+....................    ///                                                                     ///
+....................    
+....................    
+....................     
+....................       #define PB_increment pin_B4
+....................       #define PB_Save_Time pin_B5
+....................       
+....................      
+....................       int loop5 = 0;
+....................       int value;
+....................       int temp = 0; 
+....................       
+....................       
+....................     void Template()
+....................        {                                     
+....................                 putc (0xfe); 
+*
+0021A:  MOVLW  FE
+0021C:  RCALL  01C8
+....................                 putc (0x45); // psn cmd
+0021E:  MOVLW  45
+00220:  RCALL  01C8
+....................                 putc (0x05); // psn                
+00222:  MOVLW  05
+00224:  RCALL  01C8
+....................                 printf ("WB9IXS UTC");                
+00226:  MOVLW  50
+00228:  MOVWF  FF6
+0022A:  MOVLW  00
+0022C:  MOVWF  FF7
+0022E:  RCALL  01F8
+....................                 putc (0xfe); 
+00230:  MOVLW  FE
+00232:  RCALL  01C8
+....................                 putc (0x45); // psn cmd
+00234:  MOVLW  45
+00236:  RCALL  01C8
+....................                 putc (0x47); // psn 
+00238:  MOVLW  47
+0023A:  RCALL  01C8
+....................                 printf ("CLOCK");                 
+0023C:  MOVLW  5C
+0023E:  MOVWF  FF6
+00240:  MOVLW  00
+00242:  MOVWF  FF7
+00244:  RCALL  01F8
+....................                 putc (0xfe); 
+00246:  MOVLW  FE
+00248:  RCALL  01C8
+....................                 putc (0x45); // psn cmd
+0024A:  MOVLW  45
+0024C:  RCALL  01C8
+....................                 putc (0x14); //row1 
+0024E:  MOVLW  14
+00250:  RCALL  01C8
+....................                 printf ("UT   :  ");                
+00252:  MOVLW  62
+00254:  MOVWF  FF6
+00256:  MOVLW  00
+00258:  MOVWF  FF7
+0025A:  RCALL  01F8
+....................                 putc (0xfe); 
+0025C:  MOVLW  FE
+0025E:  RCALL  01C8
+....................                 putc (0x45); // psn cmd
+00260:  MOVLW  45
+00262:  RCALL  01C8
+....................                 putc (0x1d); //row1 
+00264:  MOVLW  1D
+00266:  RCALL  01C8
+....................                 printf ("CT   :  :  ");
+00268:  MOVLW  6C
+0026A:  MOVWF  FF6
+0026C:  MOVLW  00
+0026E:  MOVWF  FF7
+00270:  RCALL  01F8
+00272:  RETURN 0
+....................                }    
+....................              
+....................     void Manual_Set_Time() {
+....................                 loop5 = 1; 
+*
+00C9A:  MOVLW  01
+00C9C:  MOVWF  0F
+....................                 value = input_b() & 0x07; // only read 1st 3 bits
+00C9E:  SETF   F93
+00CA0:  MOVF   F81,W
+00CA2:  ANDLW  07
+00CA4:  MOVWF  10
+....................                 delay_ms(500);                                                  
+00CA6:  MOVLW  02
+00CA8:  MOVWF  12
+00CAA:  MOVLW  FA
+00CAC:  MOVWF  13
+00CAE:  CALL   01D0
+00CB2:  DECFSZ 12,F
+00CB4:  BRA    0CAA
+....................     /* Value is the value read from the 1st 3 bits on the thumbwheel switch */
+....................     /* Because the inputs are pulled high the values are inverted. for example*/
+....................     /* PSN 0 has no contacts pulled low so the value is 0x07 PSN 1 has bit 0 */
+....................     /* low so the value is 0x06 psn 2 has bit 2 low so the value is 0x05 and */
+....................     /* so on                                                                 */
+....................     
+....................     
+....................          switch(value ) {            
+00CB6:  MOVF   10,W
+00CB8:  XORLW  07
+00CBA:  BZ    0CDC
+00CBC:  XORLW  01
+00CBE:  BTFSC  FD8.2
+00CC0:  BRA    0DE6
+00CC2:  XORLW  03
+00CC4:  BTFSC  FD8.2
+00CC6:  BRA    0ED6
+00CC8:  XORLW  01
+00CCA:  BTFSC  FD8.2
+00CCC:  BRA    0FD0
+00CCE:  XORLW  07
+00CD0:  BTFSC  FD8.2
+00CD2:  BRA    10AC
+00CD4:  XORLW  01
+00CD6:  BTFSC  FD8.2
+00CD8:  BRA    1180
+00CDA:  BRA    125A
+....................             case 7: //hour
+....................                   temp=1;
+00CDC:  MOVLW  01
+00CDE:  MOVWF  11
+....................                   putc (0xfe);
+00CE0:  MOVLW  FE
+00CE2:  CALL   01C8
+....................                   putc (0x51); // clear the screen
+00CE6:  MOVLW  51
+00CE8:  CALL   01C8
+....................                while(loop5){
+00CEC:  MOVF   0F,F
+00CEE:  BTFSC  FD8.2
+00CF0:  BRA    0DE6
+....................                  putc (0xFE);
+00CF2:  MOVLW  FE
+00CF4:  CALL   01C8
+....................                  putc (0x45);  // cursor psn cmd
+00CF8:  MOVLW  45
+00CFA:  CALL   01C8
+....................                  putc (0x00);  // cursor psn 
+00CFE:  MOVLW  00
+00D00:  CALL   01C8
+....................                  printf("Hrs are 24hr format");
+00D04:  MOVLW  78
+00D06:  MOVWF  FF6
+00D08:  MOVLW  00
+00D0A:  MOVWF  FF7
+00D0C:  CALL   01F8
+....................                  putc (0xFE);
+00D10:  MOVLW  FE
+00D12:  CALL   01C8
+....................                  putc (0x45);  // cursor psn cmd
+00D16:  MOVLW  45
+00D18:  CALL   01C8
+....................                  putc (0x40);  // cursor psn 
+00D1C:  MOVLW  40
+00D1E:  CALL   01C8
+....................                  printf("Hrs are CT time UTC");
+00D22:  MOVLW  8C
+00D24:  MOVWF  FF6
+00D26:  MOVLW  00
+00D28:  MOVWF  FF7
+00D2A:  CALL   01F8
+....................                  putc (0xFE);
+00D2E:  MOVLW  FE
+00D30:  CALL   01C8
+....................                  putc (0x45);  // cursor psn cmd
+00D34:  MOVLW  45
+00D36:  CALL   01C8
+....................                  putc (0x14);  // cursor psn 
+00D3A:  MOVLW  14
+00D3C:  CALL   01C8
+....................                  printf("time is automatic");
+00D40:  MOVLW  A0
+00D42:  MOVWF  FF6
+00D44:  MOVLW  00
+00D46:  MOVWF  FF7
+00D48:  CALL   01F8
+....................          // print the hours as they increment    
+....................                 putc (0xFE);
+00D4C:  MOVLW  FE
+00D4E:  CALL   01C8
+....................                 putc (0x45);  // cursor psn cmd
+00D52:  MOVLW  45
+00D54:  CALL   01C8
+....................                 putc (0x54);  // cursor psn       
+00D58:  MOVLW  54
+00D5A:  CALL   01C8
+....................                 printf (" Hours =-> %u",temp);
+00D5E:  MOVLW  B2
+00D60:  MOVWF  FF6
+00D62:  MOVLW  00
+00D64:  MOVWF  FF7
+00D66:  MOVLW  0B
+00D68:  MOVWF  12
+00D6A:  RCALL  09B2
+00D6C:  MOVFF  11,12
+00D70:  MOVLW  1B
+00D72:  MOVWF  13
+00D74:  CALL   04CA
+....................                 delay_ms(100);
+00D78:  MOVLW  64
+00D7A:  MOVWF  13
+00D7C:  CALL   01D0
+....................                   
+....................                   if(!input(PB_increment)){temp ++;delay_ms(200);}
+00D80:  BSF    F93.4
+00D82:  BTFSC  F81.4
+00D84:  BRA    0D90
+00D86:  INCF   11,F
+00D88:  MOVLW  C8
+00D8A:  MOVWF  13
+00D8C:  CALL   01D0
+....................                      if (temp > 24){temp = 0;}
+00D90:  MOVF   11,W
+00D92:  SUBLW  18
+00D94:  BC    0D98
+00D96:  CLRF   11
+....................                         if(!input(PB_Save_Time)){
+00D98:  BSF    F93.5
+00D9A:  BTFSC  F81.5
+00D9C:  BRA    0DE4
+....................                         hour = (((temp/10) << 4) | (temp % 10));
+00D9E:  MOVFF  11,14
+00DA2:  MOVLW  0A
+00DA4:  MOVWF  15
+00DA6:  CALL   04A2
+00DAA:  SWAPF  01,W
+00DAC:  MOVWF  12
+00DAE:  MOVLW  F0
+00DB0:  ANDWF  12,F
+00DB2:  MOVFF  11,14
+00DB6:  MOVLW  0A
+00DB8:  MOVWF  15
+00DBA:  CALL   04A2
+00DBE:  MOVF   00,W
+00DC0:  IORWF  12,W
+00DC2:  MOVWF  06
+....................                         //(((temp/10) << 4) | (temp % 10)); convert temp to BCD
+....................                         Write_hours();
+00DC4:  BRA    09D2
+....................                         loop5 = 0;
+00DC6:  CLRF   0F
+....................                         temp=0;
+00DC8:  CLRF   11
+....................                   // clear the area where the hours were setup 
+....................                         putc (0xfe);
+00DCA:  MOVLW  FE
+00DCC:  CALL   01C8
+....................                         putc (0x51); // clear the screen
+00DD0:  MOVLW  51
+00DD2:  CALL   01C8
+....................                         delay_ms(200);
+00DD6:  MOVLW  C8
+00DD8:  MOVWF  13
+00DDA:  CALL   01D0
+....................                         Template();
+00DDE:  CALL   021A
+....................                         return;
+00DE2:  BRA    125E
+....................                         }//end if 
+00DE4:  BRA    0CEC
+....................                          }//end while  
+....................             
+....................             case 6:   //minute
+....................                   putc (0xfe);
+00DE6:  MOVLW  FE
+00DE8:  CALL   01C8
+....................                   putc (0x51); // clear the screen
+00DEC:  MOVLW  51
+00DEE:  CALL   01C8
+....................                while(loop5){
+00DF2:  MOVF   0F,F
+00DF4:  BZ    0ED6
+....................                   putc (0xFE);
+00DF6:  MOVLW  FE
+00DF8:  CALL   01C8
+....................                   putc (0x45);  // cursor psn cmd
+00DFC:  MOVLW  45
+00DFE:  CALL   01C8
+....................                   putc (0x00);  // cursor psn 
+00E02:  MOVLW  00
+00E04:  CALL   01C8
+....................                   printf("Sec's are set to 0 ");
+00E08:  MOVLW  C0
+00E0A:  MOVWF  FF6
+00E0C:  MOVLW  00
+00E0E:  MOVWF  FF7
+00E10:  CALL   01F8
+....................                   putc (0xFE);
+00E14:  MOVLW  FE
+00E16:  CALL   01C8
+....................                   putc (0x45);  // cursor psn cmd
+00E1A:  MOVLW  45
+00E1C:  CALL   01C8
+....................                   putc (0x40);  // cursor psn 
+00E20:  MOVLW  40
+00E22:  CALL   01C8
+....................                   printf("when min's are saved");
+00E26:  MOVLW  D4
+00E28:  MOVWF  FF6
+00E2A:  MOVLW  00
+00E2C:  MOVWF  FF7
+00E2E:  CALL   01F8
+....................                   delay_ms(100);
+00E32:  MOVLW  64
+00E34:  MOVWF  13
+00E36:  CALL   01D0
+....................             // print the minutes as they increment 
+....................                   putc (0xFE);
+00E3A:  MOVLW  FE
+00E3C:  CALL   01C8
+....................                   putc (0x45);  // cursor psn cmd
+00E40:  MOVLW  45
+00E42:  CALL   01C8
+....................                   putc (0x54);  // cursor psn   
+00E46:  MOVLW  54
+00E48:  CALL   01C8
+....................                   printf (" Minutes =-> %u",temp);
+00E4C:  MOVLW  EA
+00E4E:  MOVWF  FF6
+00E50:  MOVLW  00
+00E52:  MOVWF  FF7
+00E54:  MOVLW  0D
+00E56:  MOVWF  12
+00E58:  RCALL  09B2
+00E5A:  MOVFF  11,12
+00E5E:  MOVLW  1B
+00E60:  MOVWF  13
+00E62:  CALL   04CA
+....................                   delay_ms(100);
+00E66:  MOVLW  64
+00E68:  MOVWF  13
+00E6A:  CALL   01D0
+....................                  
+....................                   if(!input(PB_increment)){temp ++;delay_ms(200);}  
+00E6E:  BSF    F93.4
+00E70:  BTFSC  F81.4
+00E72:  BRA    0E7E
+00E74:  INCF   11,F
+00E76:  MOVLW  C8
+00E78:  MOVWF  13
+00E7A:  CALL   01D0
+....................                      if (temp > 59){temp = 0;}
+00E7E:  MOVF   11,W
+00E80:  SUBLW  3B
+00E82:  BC    0E86
+00E84:  CLRF   11
+....................                         if(!input(PB_Save_Time)){
+00E86:  BSF    F93.5
+00E88:  BTFSC  F81.5
+00E8A:  BRA    0ED4
+....................                         minute = (((temp/10) << 4) | (temp % 10));
+00E8C:  MOVFF  11,14
+00E90:  MOVLW  0A
+00E92:  MOVWF  15
+00E94:  CALL   04A2
+00E98:  SWAPF  01,W
+00E9A:  MOVWF  12
+00E9C:  MOVLW  F0
+00E9E:  ANDWF  12,F
+00EA0:  MOVFF  11,14
+00EA4:  MOVLW  0A
+00EA6:  MOVWF  15
+00EA8:  CALL   04A2
+00EAC:  MOVF   00,W
+00EAE:  IORWF  12,W
+00EB0:  MOVWF  05
+....................                         //(((temp/10) << 4) | (temp % 10)); convert temp to BCD
+....................                         Write_minutes();
+00EB2:  BRA    0A34
+....................                         Write_seconds();
+00EB4:  BRA    0A96
+....................                         loop5 = 0;
+00EB6:  CLRF   0F
+....................                         temp=0;
+00EB8:  CLRF   11
+....................             // clear the area where the hours were setup  
+....................                         putc (0xfe);
+00EBA:  MOVLW  FE
+00EBC:  CALL   01C8
+....................                         putc (0x51); // clear the screen
+00EC0:  MOVLW  51
+00EC2:  CALL   01C8
+....................                         delay_ms(200);
+00EC6:  MOVLW  C8
+00EC8:  MOVWF  13
+00ECA:  CALL   01D0
+....................                         Template();
+00ECE:  CALL   021A
+....................                         return;
+00ED2:  BRA    125E
+....................                        }//end if
+00ED4:  BRA    0DF2
+....................                        }//end while 
+....................                        
+....................            case 5:   //day
+....................                   temp=1;
+00ED6:  MOVLW  01
+00ED8:  MOVWF  11
+....................                   putc (0xfe);
+00EDA:  MOVLW  FE
+00EDC:  CALL   01C8
+....................                   putc (0x51); // clear the screen
+00EE0:  MOVLW  51
+00EE2:  CALL   01C8
+....................                   delay_ms(200);
+00EE6:  MOVLW  C8
+00EE8:  MOVWF  13
+00EEA:  CALL   01D0
+....................                while(loop5){
+00EEE:  MOVF   0F,F
+00EF0:  BZ    0FD0
+....................                   putc (0xFE);
+00EF2:  MOVLW  FE
+00EF4:  CALL   01C8
+....................                   putc (0x45);  // cursor psn cmd
+00EF8:  MOVLW  45
+00EFA:  CALL   01C8
+....................                   putc (0x0);  // cursor psn 
+00EFE:  MOVLW  00
+00F00:  CALL   01C8
+....................                   printf ("1=Sun2=Mon3=Tue4=Wed");
+00F04:  MOVLW  FA
+00F06:  MOVWF  FF6
+00F08:  MOVLW  00
+00F0A:  MOVWF  FF7
+00F0C:  CALL   01F8
+....................                   putc (0xFE);
+00F10:  MOVLW  FE
+00F12:  CALL   01C8
+....................                   putc (0x45);  // cursor psn cmd
+00F16:  MOVLW  45
+00F18:  CALL   01C8
+....................                   putc (0x40);  // cursor psn 
+00F1C:  MOVLW  40
+00F1E:  CALL   01C8
+....................                   printf ("5=Thu6=Fri7=Sat");
+00F22:  MOVLW  10
+00F24:  MOVWF  FF6
+00F26:  MOVLW  01
+00F28:  MOVWF  FF7
+00F2A:  CALL   01F8
+....................             // print the day as they increment 
+....................                   putc (0xFE);
+00F2E:  MOVLW  FE
+00F30:  CALL   01C8
+....................                   putc (0x45);  // cursor psn cmd
+00F34:  MOVLW  45
+00F36:  CALL   01C8
+....................                   putc (0x54);  // cursor psn   
+00F3A:  MOVLW  54
+00F3C:  CALL   01C8
+....................                   printf ("Day =->%u",temp);
+00F40:  MOVLW  20
+00F42:  MOVWF  FF6
+00F44:  MOVLW  01
+00F46:  MOVWF  FF7
+00F48:  MOVLW  07
+00F4A:  MOVWF  12
+00F4C:  RCALL  09B2
+00F4E:  MOVFF  11,12
+00F52:  MOVLW  1B
+00F54:  MOVWF  13
+00F56:  CALL   04CA
+....................                   delay_ms(100);
+00F5A:  MOVLW  64
+00F5C:  MOVWF  13
+00F5E:  CALL   01D0
+....................                  
+....................                   if(!input(PB_increment)){temp ++;delay_ms(300);}  
+00F62:  BSF    F93.4
+00F64:  BTFSC  F81.4
+00F66:  BRA    0F7A
+00F68:  INCF   11,F
+00F6A:  MOVLW  02
+00F6C:  MOVWF  12
+00F6E:  MOVLW  96
+00F70:  MOVWF  13
+00F72:  CALL   01D0
+00F76:  DECFSZ 12,F
+00F78:  BRA    0F6E
+....................                      if (temp > 7){temp = 0;}
+00F7A:  MOVF   11,W
+00F7C:  SUBLW  07
+00F7E:  BC    0F82
+00F80:  CLRF   11
+....................                         if(!input(PB_Save_Time)){
+00F82:  BSF    F93.5
+00F84:  BTFSC  F81.5
+00F86:  BRA    0FCE
+....................                         day = (((temp/10) << 4) | (temp % 10));
+00F88:  MOVFF  11,14
+00F8C:  MOVLW  0A
+00F8E:  MOVWF  15
+00F90:  CALL   04A2
+00F94:  SWAPF  01,W
+00F96:  MOVWF  12
+00F98:  MOVLW  F0
+00F9A:  ANDWF  12,F
+00F9C:  MOVFF  11,14
+00FA0:  MOVLW  0A
+00FA2:  MOVWF  15
+00FA4:  CALL   04A2
+00FA8:  MOVF   00,W
+00FAA:  IORWF  12,W
+00FAC:  MOVWF  0A
+....................                         //(((temp/10) << 4) | (temp % 10)); convert temp to BCD
+....................                         Write_days();
+00FAE:  BRA    0AFA
+....................                         loop5 = 0;
+00FB0:  CLRF   0F
+....................                         temp=0;
+00FB2:  CLRF   11
+....................             // clear the area where the hours were setup     
+....................                          putc (0xfe);
+00FB4:  MOVLW  FE
+00FB6:  CALL   01C8
+....................                          putc (0x51); // clear the screen
+00FBA:  MOVLW  51
+00FBC:  CALL   01C8
+....................                          delay_ms(200);
+00FC0:  MOVLW  C8
+00FC2:  MOVWF  13
+00FC4:  CALL   01D0
+....................                          Template();
+00FC8:  CALL   021A
+....................                         return;
+00FCC:  BRA    125E
+....................                        }//end if
+00FCE:  BRA    0EEE
+....................                        }//end while 
+....................                        
+....................             case 4:   //month
+....................                   temp=1;
+00FD0:  MOVLW  01
+00FD2:  MOVWF  11
+....................                   putc (0xfe);
+00FD4:  MOVLW  FE
+00FD6:  CALL   01C8
+....................                   putc (0x51); // clear the screen
+00FDA:  MOVLW  51
+00FDC:  CALL   01C8
+....................                   delay_ms(200);
+00FE0:  MOVLW  C8
+00FE2:  MOVWF  13
+00FE4:  CALL   01D0
+....................                while(loop5){
+00FE8:  MOVF   0F,F
+00FEA:  BZ    10AC
+....................                   putc (0xFE);
+00FEC:  MOVLW  FE
+00FEE:  CALL   01C8
+....................                   putc (0x45);  // cursor psn cmd
+00FF2:  MOVLW  45
+00FF4:  CALL   01C8
+....................                   putc (0x0);  // cursor psn 
+00FF8:  MOVLW  00
+00FFA:  CALL   01C8
+....................                   printf ("Enter month 1-12");
+00FFE:  MOVLW  2A
+01000:  MOVWF  FF6
+01002:  MOVLW  01
+01004:  MOVWF  FF7
+01006:  CALL   01F8
+....................                   
+....................             // print the day as they increment 
+....................                   putc (0xFE);
+0100A:  MOVLW  FE
+0100C:  CALL   01C8
+....................                   putc (0x45);  // cursor psn cmd
+01010:  MOVLW  45
+01012:  CALL   01C8
+....................                   putc (0x54);  // cursor psn   
+01016:  MOVLW  54
+01018:  CALL   01C8
+....................                   printf (" Month =->%u",temp);
+0101C:  MOVLW  3C
+0101E:  MOVWF  FF6
+01020:  MOVLW  01
+01022:  MOVWF  FF7
+01024:  MOVLW  0A
+01026:  MOVWF  12
+01028:  RCALL  09B2
+0102A:  MOVFF  11,12
+0102E:  MOVLW  1B
+01030:  MOVWF  13
+01032:  CALL   04CA
+....................                   delay_ms(100);
+01036:  MOVLW  64
+01038:  MOVWF  13
+0103A:  CALL   01D0
+....................                  
+....................                   if(!input(PB_increment)){temp ++;delay_ms(300);}  
+0103E:  BSF    F93.4
+01040:  BTFSC  F81.4
+01042:  BRA    1056
+01044:  INCF   11,F
+01046:  MOVLW  02
+01048:  MOVWF  12
+0104A:  MOVLW  96
+0104C:  MOVWF  13
+0104E:  CALL   01D0
+01052:  DECFSZ 12,F
+01054:  BRA    104A
+....................                      if (temp > 12){temp = 0;}
+01056:  MOVF   11,W
+01058:  SUBLW  0C
+0105A:  BC    105E
+0105C:  CLRF   11
+....................                         if(!input(PB_Save_Time)){
+0105E:  BSF    F93.5
+01060:  BTFSC  F81.5
+01062:  BRA    10AA
+....................                         month = (((temp/10) << 4) | (temp % 10));
+01064:  MOVFF  11,14
+01068:  MOVLW  0A
+0106A:  MOVWF  15
+0106C:  CALL   04A2
+01070:  SWAPF  01,W
+01072:  MOVWF  12
+01074:  MOVLW  F0
+01076:  ANDWF  12,F
+01078:  MOVFF  11,14
+0107C:  MOVLW  0A
+0107E:  MOVWF  15
+01080:  CALL   04A2
+01084:  MOVF   00,W
+01086:  IORWF  12,W
+01088:  MOVWF  08
+....................                         //(((temp/10) << 4) | (temp % 10)); convert temp to BCD
+....................                         Write_months();
+0108A:  BRA    0B62
+....................                         loop5 = 0;
+0108C:  CLRF   0F
+....................                         temp=0;
+0108E:  CLRF   11
+....................             // clear the area where the hours were setup     
+....................                          putc (0xfe);
+01090:  MOVLW  FE
+01092:  CALL   01C8
+....................                          putc (0x51); // clear the screen
+01096:  MOVLW  51
+01098:  CALL   01C8
+....................                          delay_ms(200);
+0109C:  MOVLW  C8
+0109E:  MOVWF  13
+010A0:  CALL   01D0
+....................                          Template();
+010A4:  CALL   021A
+....................                         return;
+010A8:  BRA    125E
+....................                        }//end if
+010AA:  BRA    0FE8
+....................                        }//end while 
+....................                        
+....................            case 3:   //date
+....................                   temp=1;
+010AC:  MOVLW  01
+010AE:  MOVWF  11
+....................                   putc (0xfe);
+010B0:  MOVLW  FE
+010B2:  CALL   01C8
+....................                   putc (0x51); // clear the screen
+010B6:  MOVLW  51
+010B8:  CALL   01C8
+....................                   delay_ms(200);
+010BC:  MOVLW  C8
+010BE:  MOVWF  13
+010C0:  CALL   01D0
+....................                while(loop5){
+010C4:  MOVF   0F,F
+010C6:  BZ    1180
+....................                   putc (0xFE);
+010C8:  MOVLW  FE
+010CA:  CALL   01C8
+....................                   putc (0x45);  // cursor psn cmd
+010CE:  MOVLW  45
+010D0:  CALL   01C8
+....................                   putc (0x0);  // cursor psn 
+010D4:  MOVLW  00
+010D6:  CALL   01C8
+....................                   printf ("Enter Date 1-31");
+010DA:  MOVLW  4A
+010DC:  MOVWF  FF6
+010DE:  MOVLW  01
+010E0:  MOVWF  FF7
+010E2:  CALL   01F8
+....................                   
+....................             // print the day as they increment 
+....................                   putc (0xFE);
+010E6:  MOVLW  FE
+010E8:  CALL   01C8
+....................                   putc (0x45);  // cursor psn cmd
+010EC:  MOVLW  45
+010EE:  CALL   01C8
+....................                   putc (0x54);  // cursor psn   
+010F2:  MOVLW  54
+010F4:  CALL   01C8
+....................                   printf (" Date =->%u",temp);
+010F8:  MOVLW  5A
+010FA:  MOVWF  FF6
+010FC:  MOVLW  01
+010FE:  MOVWF  FF7
+01100:  MOVLW  09
+01102:  MOVWF  12
+01104:  RCALL  09B2
+01106:  MOVFF  11,12
+0110A:  MOVLW  1B
+0110C:  MOVWF  13
+0110E:  CALL   04CA
+....................                   delay_ms(100);
+01112:  MOVLW  64
+01114:  MOVWF  13
+01116:  CALL   01D0
+....................                  
+....................                   if(!input(PB_increment)){temp ++;delay_ms(200);}  
+0111A:  BSF    F93.4
+0111C:  BTFSC  F81.4
+0111E:  BRA    112A
+01120:  INCF   11,F
+01122:  MOVLW  C8
+01124:  MOVWF  13
+01126:  CALL   01D0
+....................                      if (temp > 31){temp = 0;}
+0112A:  MOVF   11,W
+0112C:  SUBLW  1F
+0112E:  BC    1132
+01130:  CLRF   11
+....................                         if(!input(PB_Save_Time)){
+01132:  BSF    F93.5
+01134:  BTFSC  F81.5
+01136:  BRA    117E
+....................                         date = (((temp/10) << 4) | (temp % 10));
+01138:  MOVFF  11,14
+0113C:  MOVLW  0A
+0113E:  MOVWF  15
+01140:  CALL   04A2
+01144:  SWAPF  01,W
+01146:  MOVWF  12
+01148:  MOVLW  F0
+0114A:  ANDWF  12,F
+0114C:  MOVFF  11,14
+01150:  MOVLW  0A
+01152:  MOVWF  15
+01154:  CALL   04A2
+01158:  MOVF   00,W
+0115A:  IORWF  12,W
+0115C:  MOVWF  07
+....................                         //(((temp/10) << 4) | (temp % 10)); convert temp to BCD
+....................                         Write_date();
+0115E:  BRA    0BCA
+....................                         loop5 = 0;
+01160:  CLRF   0F
+....................                         temp=0;
+01162:  CLRF   11
+....................             // clear the area where the hours were setup     
+....................                          putc (0xfe);
+01164:  MOVLW  FE
+01166:  CALL   01C8
+....................                          putc (0x51); // clear the screen
+0116A:  MOVLW  51
+0116C:  CALL   01C8
+....................                          delay_ms(200);
+01170:  MOVLW  C8
+01172:  MOVWF  13
+01174:  CALL   01D0
+....................                          Template();
+01178:  CALL   021A
+....................                         return;
+0117C:  BRA    125E
+....................                        }//end if
+0117E:  BRA    10C4
+....................                        }//end while 
+....................                 
+....................            case 2:   //CST/DST
+....................                   temp=1;
+01180:  MOVLW  01
+01182:  MOVWF  11
+....................                   putc (0xfe);
+01184:  MOVLW  FE
+01186:  CALL   01C8
+....................                   putc (0x51); // clear the screen
+0118A:  MOVLW  51
+0118C:  CALL   01C8
+....................                   delay_ms(200);
+01190:  MOVLW  C8
+01192:  MOVWF  13
+01194:  CALL   01D0
+....................                while(loop5){
+01198:  MOVF   0F,F
+0119A:  BZ    125A
+....................                   putc (0xFE);
+0119C:  MOVLW  FE
+0119E:  CALL   01C8
+....................                   putc (0x45);  // cursor psn cmd
+011A2:  MOVLW  45
+011A4:  CALL   01C8
+....................                   putc (0x00);  // cursor psn 
+011A8:  MOVLW  00
+011AA:  CALL   01C8
+....................                   printf("Enter 6 for CST ");
+011AE:  MOVLW  66
+011B0:  MOVWF  FF6
+011B2:  MOVLW  01
+011B4:  MOVWF  FF7
+011B6:  CALL   01F8
+....................                   putc (0xFE);
+011BA:  MOVLW  FE
+011BC:  CALL   01C8
+....................                   putc (0x45);  // cursor psn cmd
+011C0:  MOVLW  45
+011C2:  CALL   01C8
+....................                   putc (0x40);  // cursor psn 
+011C6:  MOVLW  40
+011C8:  CALL   01C8
+....................                   printf("Enter 5 for DST ");
+011CC:  MOVLW  78
+011CE:  MOVWF  FF6
+011D0:  MOVLW  01
+011D2:  MOVWF  FF7
+011D4:  CALL   01F8
+....................                   delay_ms(100);
+011D8:  MOVLW  64
+011DA:  MOVWF  13
+011DC:  CALL   01D0
+....................                   
+....................             // print the CST/DST value as they increment 
+....................                   putc (0xFE);
+011E0:  MOVLW  FE
+011E2:  CALL   01C8
+....................                   putc (0x45);  // cursor psn cmd
+011E6:  MOVLW  45
+011E8:  CALL   01C8
+....................                   putc (0x54);  // cursor psn   
+011EC:  MOVLW  54
+011EE:  CALL   01C8
+....................                   printf (" CST_DST value =->%u",temp);
+011F2:  MOVLW  8A
+011F4:  MOVWF  FF6
+011F6:  MOVLW  01
+011F8:  MOVWF  FF7
+011FA:  MOVLW  12
+011FC:  MOVWF  12
+011FE:  CALL   09B2
+01202:  MOVFF  11,12
+01206:  MOVLW  1B
+01208:  MOVWF  13
+0120A:  CALL   04CA
+....................                   delay_ms(100);
+0120E:  MOVLW  64
+01210:  MOVWF  13
+01212:  CALL   01D0
+....................                  
+....................                  if(!input(PB_increment)){temp ++;delay_ms(200);}  
+01216:  BSF    F93.4
+01218:  BTFSC  F81.4
+0121A:  BRA    1226
+0121C:  INCF   11,F
+0121E:  MOVLW  C8
+01220:  MOVWF  13
+01222:  CALL   01D0
+....................                      if (temp > 9){temp = 0;}
+01226:  MOVF   11,W
+01228:  SUBLW  09
+0122A:  BC    122E
+0122C:  CLRF   11
+....................                         if(!input(PB_Save_Time)){
+0122E:  BSF    F93.5
+01230:  BTFSC  F81.5
+01232:  BRA    1258
+....................                         CST_DST = temp;
+01234:  MOVFF  11,0C
+....................                         Write_CST_DST();
+01238:  BRA    0C32
+....................                         loop5 = 0;
+0123A:  CLRF   0F
+....................                         temp=0;
+0123C:  CLRF   11
+....................             // clear the area where the CST_DST were setup     
+....................                          putc (0xfe);
+0123E:  MOVLW  FE
+01240:  CALL   01C8
+....................                          putc (0x51); // clear the screen
+01244:  MOVLW  51
+01246:  CALL   01C8
+....................                          delay_ms(200);
+0124A:  MOVLW  C8
+0124C:  MOVWF  13
+0124E:  CALL   01D0
+....................                          Template();
+01252:  CALL   021A
+....................                         // Write_CST_DST();
+....................                         return;
+01256:  BRA    125E
+....................                        }//end if
+01258:  BRA    1198
+....................                        }//end while                         
+....................             default: 
+....................                loop5 = 0;
+0125A:  CLRF   0F
+....................                temp=0;
+0125C:  CLRF   11
+....................                RETURN;
+....................           }//end switch case  
+0125E:  GOTO   1302 (RETURN)
+....................       }//end set time
+....................      
+.................... 
+....................         #include <Display_All.h>
+....................  
+....................  
+....................  
+....................  
+....................     void  Display_All_Regs() {
+....................        // Convert BCD to decimal
+....................         second = (second >> 4) * 10 + (second & 0x0F);
+....................         minute = (minute >> 4) * 10 + (minute & 0x0F);
+....................         hour =   (hour   >> 4) * 10 + (hour   & 0x0F);
+....................         date =   (date   >> 4) * 10 + (date   & 0x0F);
+....................         month =  (month  >> 4) * 10 + (month  & 0x0F);
+....................         year =   (year   >> 4) * 10 + (year   & 0x0F);
+....................      // End conversion
+....................     
+....................        
+....................          putc (0x1B);  // cursor escape
+....................          putc (0x00);
+....................          printf ("Hours->%u",hour);
+....................          delay_ms(50);
+....................          
+....................          putc (0x1B);  // cursor escape
+....................          putc (0x1a); 
+....................          printf ("%u",hour);
+....................          delay_ms(50);
+....................          
+....................          putc (0x1B);  // cursor escape
+....................          putc (0x09);  
+....................          printf (" Min->");
+....................          delay_ms(50);
+....................          
+....................          putc (0x1B);  // cursor escape
+....................          putc (0x0f);
+....................          printf ("%u ",minute);
+....................          delay_ms(2000);
+....................     // clear the area where the hours and minutes were displayed    
+....................          putc (0x1B);  // cursor escape
+....................          putc (0x00);
+....................          printf ("  WB9IXS UTC CLOCK  ");
+....................          Read_All_RTC_Regs();
+....................       
+....................     }
+.................... 
+....................       
+....................         #define PB_Set_Time PIN_B3
+....................       
+....................     
+....................      
+....................     void main()
+01262:  CLRF   FF8
+01264:  BCF    FD0.7
+01266:  BCF    FB8.3
+01268:  MOVLW  19
+0126A:  MOVWF  FAF
+0126C:  MOVLW  A6
+0126E:  MOVWF  FAC
+01270:  MOVLW  90
+01272:  MOVWF  FAB
+01274:  CLRF   0E
+01276:  CLRF   0D
+01278:  CLRF   0F
+0127A:  CLRF   11
+0127C:  MOVLB  F
+0127E:  CLRF   x38
+01280:  CLRF   x39
+01282:  CLRF   x3A
+01284:  CLRF   F77
+01286:  CLRF   F78
+01288:  CLRF   F79
+....................        {      
+....................                 putc (0xfe);
+0128A:  MOVLW  FE
+0128C:  MOVLB  0
+0128E:  CALL   01C8
+....................                 putc (0x61); // rs232 baud  
+01292:  MOVLW  61
+01294:  CALL   01C8
+....................                 putc (0x04); // = 9600
+01298:  MOVLW  04
+0129A:  CALL   01C8
+....................                 
+....................                 delay_ms(3000);       // wait for lcd to init
+0129E:  MOVLW  0C
+012A0:  MOVWF  12
+012A2:  MOVLW  FA
+012A4:  MOVWF  13
+012A6:  CALL   01D0
+012AA:  DECFSZ 12,F
+012AC:  BRA    12A2
+....................                 putc (0xfe);
+012AE:  MOVLW  FE
+012B0:  CALL   01C8
+....................                 putc (0x41); // Turn on display
+012B4:  MOVLW  41
+012B6:  CALL   01C8
+....................                 
+....................                 putc (0xfe);
+012BA:  MOVLW  FE
+012BC:  CALL   01C8
+....................                 putc (0x51); // clear the screen               
+012C0:  MOVLW  51
+012C2:  CALL   01C8
+....................                         
+....................                 putc (0xfe); // set briteness 0-8
+012C6:  MOVLW  FE
+012C8:  CALL   01C8
+....................                 putc (0x53); 
+012CC:  MOVLW  53
+012CE:  CALL   01C8
+....................                 putc (0x08);              
+012D2:  MOVLW  08
+012D4:  CALL   01C8
+....................                
+....................                 putc (0xfe); // set contrast 0-50
+012D8:  MOVLW  FE
+012DA:  CALL   01C8
+....................                 putc (0x52); 
+012DE:  MOVLW  52
+012E0:  CALL   01C8
+....................                 putc (39);  
+012E4:  MOVLW  27
+012E6:  CALL   01C8
+....................                 
+....................                 Template();                                             
+012EA:  CALL   021A
+....................                 Read_All_RTC_Regs_At_Start(); //read all ds1307 regs without display
+012EE:  GOTO   0346
+....................                 Read_CST_DST(); // get the Central Standard or 
+012F2:  GOTO   0410
+....................                                 // Daylight Saving Stardard value from memory
+....................                               
+....................        while(TRUE)
+....................          {  
+....................               Read_All_RTC_Regs();
+012F6:  GOTO   08E6
+....................               
+....................            if (!input (PB_Set_Time)) // this allows the thumbwheel to be read
+012FA:  BSF    F93.3
+012FC:  BTFSC  F81.3
+012FE:  BRA    1302
+....................               {
+....................               Manual_Set_Time(); // this is where the switch psn is read  
+01300:  BRA    0C9A
+....................              }
+01302:  BRA    12F6
+....................            }//end while
+....................           }//main
+01304:  SLEEP 
+
+Configuration Fuses:
+   Word  1: E100   XT NOPLLEN PRIMARY FCMEN IESO
+   Word  2: 3C1E   PUT BROWNOUT BORV19 NOWDT WDT32768
+   Word  3: BF00   CCP2C1 PBADEN CCP3B5 HFOFST TIMER3C0 CCP2B5 MCLR
+   Word  4: 0081   STVREN NOLVP NOXINST NODEBUG
+   Word  5: C00F   NOPROTECT NOCPB NOCPD
+   Word  6: E00F   NOWRT NOWRTC NOWRTB NOWRTD
+   Word  7: 400F   NOEBTR NOEBTRB

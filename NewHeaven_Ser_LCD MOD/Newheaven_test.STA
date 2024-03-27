@@ -1,0 +1,107 @@
+
+ROM used:   4252/65536 (6%)
+            4252/65536 (6%) including unused fragments
+
+            2.5 Average locations per line
+            8.9 Average locations per statement
+
+RAM used:   18/3896 (0%) at main() level
+            22/3896 (1%) worst case
+
+Stack used: 2 worst case (2 in main + 0 for interrupts)
+Stack size: 31
+
+Lines Stmts  %   Files
+----- ----- ---  -----
+   50    22   5  Newheaven_test.c
+   12     0   0  Hardware_Setup.h
+ 1036     0   0  ..\..\..\Program Files (x86)\PICC\Devices\18f26k22.h
+  270   228  48  RTC_DS1307.h
+  260   203  42  manual_set_time.h
+   42    26   5  Display_All.h
+----- -----
+ 1670   479 Total
+
+Page ROM  %  RAM    Vol Diff  Functions:
+---- --- --- ---    --- ----  ----------
+0     40   0    1             @delay_ms1
+0      8   0    0             @PUTCHARI_BIU_1
+0    102   1    3             @I2C_READ_129
+0    108   1    1             @I2C_WRITE_129
+0    880  10    1   5227  6.4  ds1307_display
+0     40   0    3             @DIV88
+0    108   1    2             @PRINTF_U_9600_31766_31767
+0      4   0    0             @const826
+0     34   0    2             @PSTRINGC_9600_31766_31767
+0      4   0    0             @const831
+0      4   0    0             @const832
+0      4   0    0             @const833
+0      4   0    0             @const834
+0      4   0    0             @const835
+0      4   0    0             @const836
+0      4   0    0             @const837
+0      4   0    0             @const838
+0      4   0    0             @const839
+0      4   0    0             @const840
+0      4   0    0             @const841
+0      4   0    0             @const842
+0      4   0    0             @const843
+0      4   0    0             @const844
+0      4   0    0             @const845
+0      4   0    0             @const846
+0      4   0    0             @const847
+0      4   0    0             @const848
+0     94   1    0     94  1.3  write_Seconds
+0     96   1    0    104  1.7  Write_Minutes
+0     96   1    0    104  1.7  Write_Hours
+0     98   1    0    104  1.7  Write_Days
+0    104   1    0    104  1.7  Write_Date
+0    104   1    0    104  1.7  Write_Months
+0    204   2    0    381  1.9  Read_All_RTC_Regs
+0    202   2    0    367  1.8  Read_All_RTC_Regs_At_Start
+0     90   1    0    346  1.4  Template
+0     12   0    0             @const863
+0      6   0    0             @const864
+0     10   0    0             @const865
+0     12   0    0             @const866
+0   1254  15    1   6537  9.9  Manual_Set_Time
+0     20   0    0             @const868
+0     20   0    0             @const869
+0     18   0    0             @const870
+0     14   0    0             @const871
+0     32   0    3             @PSTRINGCN_9600_31766_31767
+0     20   0    0             @const874
+0     22   0    0             @const875
+0     16   0    0             @const876
+0     22   0    0             @const877
+0     16   0    0             @const878
+0     10   0    0             @const879
+0     18   0    0             @const880
+0     14   0    0             @const881
+0     16   0    0             @const882
+0     12   0    0             @const883
+0     10   0    0             @const885
+0      8   0    0             @const887
+0     22   0    0             @const889
+0    160   2    1    440  2.8  MAIN
+ Inline         0             @cinit1
+
+Program metrics:
+    Functions               12
+    Statements              479
+    Comments                421
+    Volume (V)              18317
+    Difficulty (D)          33.3
+    Effort to implement (E) 609499
+    Time to implement (T)   9 hours, 24 minutes
+    Est Delivered Bugs (B)  2
+    Cyclomatic Complexity   51
+    Maintainability (MI)    84
+
+ Segment     Used  Free
+-----------  ----  ----
+00000-00002     4  0  
+00004-0FFFE  4248  61284  
+
+
+
