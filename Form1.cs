@@ -185,7 +185,7 @@ namespace LoadTime
             string minute = RawTime[1];
             string second = RawTime[2];
                
-            int DayOfWeek = (int)DateTime.Today.DayOfWeek;
+            int DayOfWeek = (int)DateTime.Today.DayOfWeek+1%7;
             string DataString = day + month + year + "," + hour + minute + second + DaylightSavingsTime + DayOfWeek +  MyName  +'\r';
             string tohex = string.Format("{0:X}", DataString);
 
