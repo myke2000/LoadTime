@@ -58,6 +58,10 @@
             this.timer2 = new System.Windows.Forms.Timer(this.components);
             this.DSTradioButton = new System.Windows.Forms.RadioButton();
             this.CSTradiobutton = new System.Windows.Forms.RadioButton();
+            this.UTCoffsetValueLabel = new System.Windows.Forms.Label();
+            this.UTCoffsetLabel = new System.Windows.Forms.Label();
+            this.NameBox = new System.Windows.Forms.TextBox();
+            this.NameLabel = new System.Windows.Forms.Label();
             this.DebugBox.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -175,6 +179,8 @@
             // 
             this.DebugBox.Controls.Add(this.VersionValueLabel);
             this.DebugBox.Controls.Add(this.VersionLabel);
+            this.DebugBox.Controls.Add(this.DSTradioButton);
+            this.DebugBox.Controls.Add(this.CSTradiobutton);
             this.DebugBox.Controls.Add(this.CharCountValueLabel);
             this.DebugBox.Controls.Add(this.CharCountLabel);
             this.DebugBox.Location = new System.Drawing.Point(388, 6);
@@ -301,7 +307,7 @@
             // DSTradioButton
             // 
             this.DSTradioButton.AutoSize = true;
-            this.DSTradioButton.Location = new System.Drawing.Point(21, 76);
+            this.DSTradioButton.Location = new System.Drawing.Point(10, 79);
             this.DSTradioButton.Name = "DSTradioButton";
             this.DSTradioButton.Size = new System.Drawing.Size(78, 24);
             this.DSTradioButton.TabIndex = 21;
@@ -313,7 +319,7 @@
             // CSTradiobutton
             // 
             this.CSTradiobutton.AutoSize = true;
-            this.CSTradiobutton.Location = new System.Drawing.Point(147, 76);
+            this.CSTradiobutton.Location = new System.Drawing.Point(10, 49);
             this.CSTradiobutton.Name = "CSTradiobutton";
             this.CSTradiobutton.Size = new System.Drawing.Size(77, 24);
             this.CSTradiobutton.TabIndex = 22;
@@ -322,14 +328,51 @@
             this.CSTradiobutton.UseVisualStyleBackColor = true;
             this.CSTradiobutton.CheckedChanged += new System.EventHandler(this.CSTradiobutton_CheckedChanged);
             // 
+            // UTCoffsetValueLabel
+            // 
+            this.UTCoffsetValueLabel.AutoSize = true;
+            this.UTCoffsetValueLabel.Location = new System.Drawing.Point(363, 78);
+            this.UTCoffsetValueLabel.Name = "UTCoffsetValueLabel";
+            this.UTCoffsetValueLabel.Size = new System.Drawing.Size(18, 20);
+            this.UTCoffsetValueLabel.TabIndex = 24;
+            this.UTCoffsetValueLabel.Text = "0";
+            // 
+            // UTCoffsetLabel
+            // 
+            this.UTCoffsetLabel.AutoSize = true;
+            this.UTCoffsetLabel.Location = new System.Drawing.Point(227, 78);
+            this.UTCoffsetLabel.Name = "UTCoffsetLabel";
+            this.UTCoffsetLabel.Size = new System.Drawing.Size(132, 20);
+            this.UTCoffsetLabel.TabIndex = 23;
+            this.UTCoffsetLabel.Text = "Local UTC offset:";
+            // 
+            // NameBox
+            // 
+            this.NameBox.Location = new System.Drawing.Point(85, 73);
+            this.NameBox.MaxLength = 20;
+            this.NameBox.Name = "NameBox";
+            this.NameBox.Size = new System.Drawing.Size(136, 26);
+            this.NameBox.TabIndex = 25;
+            // 
+            // NameLabel
+            // 
+            this.NameLabel.AutoSize = true;
+            this.NameLabel.Location = new System.Drawing.Point(17, 78);
+            this.NameLabel.Name = "NameLabel";
+            this.NameLabel.Size = new System.Drawing.Size(55, 20);
+            this.NameLabel.TabIndex = 26;
+            this.NameLabel.Text = "Name:";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(612, 739);
             this.ControlBox = false;
-            this.Controls.Add(this.CSTradiobutton);
-            this.Controls.Add(this.DSTradioButton);
+            this.Controls.Add(this.NameLabel);
+            this.Controls.Add(this.NameBox);
+            this.Controls.Add(this.UTCoffsetValueLabel);
+            this.Controls.Add(this.UTCoffsetLabel);
             this.Controls.Add(this.RXlabel);
             this.Controls.Add(this.HexsendLabel);
             this.Controls.Add(this.richTextBox1);
@@ -395,6 +438,10 @@
         private System.Windows.Forms.Timer timer2;
         private System.Windows.Forms.RadioButton DSTradioButton;
         private System.Windows.Forms.RadioButton CSTradiobutton;
+        private System.Windows.Forms.Label UTCoffsetValueLabel;
+        private System.Windows.Forms.Label UTCoffsetLabel;
+        private System.Windows.Forms.TextBox NameBox;
+        private System.Windows.Forms.Label NameLabel;
     }
 }
 

@@ -15,7 +15,7 @@ namespace LoadTime
         
         public SoftwareVersion()
         {
-            Version = "6.12";
+            Version = "6.13";
         }
         //version 6 add a delay between char send()
         //6.1 fix bug sending a zero before sending main string
@@ -30,6 +30,7 @@ namespace LoadTime
         //6.10 remove pause rx button
         //6.11 remove delay
         //6.12 fix RX data window not getting serial read
+        //6.13 add auto local UTC offset. add name to the end of the DataSendString
 
     }
 

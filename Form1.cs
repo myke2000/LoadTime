@@ -22,13 +22,17 @@ namespace LoadTime
 
         public int DaylightSavingsTime { get; set; }
         public bool SerialConnected = false;
-        
+        public string MyName { get; set; } = "Name";
+
 
         public Form1()
         {
             InitializeComponent();
             SoftwareVersion s= new SoftwareVersion();
             VersionValueLabel.Text = s.Version;
+            NameBox.Text = MyName;
+            CSTradiobutton.Enabled = false;
+            DSTradioButton.Enabled = false;
             GetDateTime();
             GetComPort();
             DSTradioButton.Checked = true;
@@ -44,6 +48,15 @@ namespace LoadTime
         {
             DateBox.Text = DateTime.Today.ToString("MM/dd/yyyy");
             TimeBox.Text = DateTime.Now.ToString("HH:mm:ss");
+            GetUTCoffset();
+        }
+
+        private void GetUTCoffset()
+        {
+            var offset =DateTimeOffset.Now.Offset;
+            char[] UTCoffset = offset.ToString().ToCharArray();
+            DaylightSavingsTime= ((UTCoffset[1]-'0')*10)+(UTCoffset[2]-'0');
+            UTCoffsetValueLabel.Text = DaylightSavingsTime.ToString();
         }
 
         private void GetComPort()
@@ -144,6 +157,7 @@ namespace LoadTime
             if (serialPort1.IsOpen)
             {
                 SerialConnected=true;
+                MyName = NameBox.Text;
                 WriteDateTimeToBoard(DateBox.Text,TimeBox.Text);
                 
             }
@@ -170,21 +184,16 @@ namespace LoadTime
             string hour = RawTime[0];
             string minute = RawTime[1];
             string second = RawTime[2];
-
-            int addOneSecond = Convert.ToInt32(second) + 1;
-          
-            DateTime dow = DateTime.Now;
-            int DayOfWeek = (int)DateTime.Now.DayOfWeek+1%7;
-            string DataString = day + month + year + "," + hour + minute + second + DaylightSavingsTime + DayOfWeek + '\r';
-            Debug.WriteLine("day of week =" + dow.DayOfWeek);
-           //// string DataString = day + month + year + "," + hour + minute + second + DaylightSavingsTime+ DayOfWeek+ '\r';
+               
+            int DayOfWeek = (int)DateTime.Today.DayOfWeek;
+            string DataString = day + month + year + "," + hour + minute + second + DaylightSavingsTime + DayOfWeek +  MyName  +'\r';
             string tohex = string.Format("{0:X}", DataString);
 
            
             dataToSend = DataString.ToCharArray();
 
             DataSendBox.Clear();
-            //System.Threading.Sleep(1);
+
             try
             {
                 for(int i=0;i<dataToSend.Length;i++)
@@ -193,6 +202,8 @@ namespace LoadTime
                     serialPort1.Write(dataToSend, i, 1);
                     
                 }
+                Debug.WriteLine(DataString);
+                Debug.WriteLine("myName=" + MyName);
                 DataSendBox.Text = DataString;
 
                 CharCountValueLabel.Text = dataToSend.Length.ToString();
